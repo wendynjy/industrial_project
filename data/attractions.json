@@ -1,0 +1,29 @@
+{
+    "locations": [
+      {
+        "name": "Marina Bay Sands",
+        "latitude": "1.2834",
+        "longitude": "103.8607"
+      },
+      {
+        "name": "Sentosa Island",
+        "latitude": "1.2494",
+        "longitude": "103.8303"
+      },
+      {
+        "name": "Botanic Gardens",
+        "latitude": "1.3138",
+        "longitude": "103.8159"
+      },
+      {
+        "name": "Chinatown",
+        "latitude": "1.2839",
+        "longitude": "103.8442"
+      },
+      {
+        "name": "Orchard Road",
+        "latitude": "1.3019",
+        "longitude": "103.8380"
+      }
+    ]
+}

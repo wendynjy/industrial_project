@@ -1,0 +1,29 @@
+{
+    "locations": [
+      {
+        "name": "Lau Pa Sat",
+        "latitude": "1.2809",
+        "longitude": "103.8503"
+      },
+      {
+        "name": "Maxwell Food Centre",
+        "latitude": "1.2801",
+        "longitude": "103.8448"
+      },
+      {
+        "name": "Old Airport Road Food Centre",
+        "latitude": "1.3084",
+        "longitude": "103.8857"
+      },
+      {
+        "name": "Tiong Bahru Market",
+        "latitude": "1.2846",
+        "longitude": "103.8325"
+      },
+      {
+        "name": "Chomp Chomp Food Centre",
+        "latitude": "1.3652",
+        "longitude": "103.8652"
+      }
+    ]
+}
