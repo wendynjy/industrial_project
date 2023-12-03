@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <!-- The div that will contain the map -->
     <div id="map"></div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="performSearch()">Search</button>
+    </div>
+
     <!-- Leaflet JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- axios -->
@@ -17,4 +22,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
 

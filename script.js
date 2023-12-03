@@ -27,6 +27,31 @@ document.addEventListener("DOMContentLoaded", async function(){
     });
     controls.addTo(map);
 
+    // Search functionality
+    document.getElementById("searchInput").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            performSearch();
+        }
+    });
+
+    function performSearch() {
+        const searchInput = document.getElementById("searchInput").value;
+        if (searchInput.trim() !== "") {
+            const searchResult = findLocation(searchInput);
+
+            if (searchResult) {
+                map.flyTo([searchResult.latitude, searchResult.longitude], 15);
+            } else {
+                alert("Location not found.");
+            }
+        }
+    }
+
+    function findLocation(locationName) {
+        const allLocations = attractions.concat(hawkers);
+        return allLocations.find(location => location.name.toLowerCase() === locationName.toLowerCase());
+    }
+
 });
 
 async function loadData(filePath) {
