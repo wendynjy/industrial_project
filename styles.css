@@ -7,6 +7,31 @@ body {
     height: 100vh;
 }
 
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-icon {
+    font-size: 14px;
+    padding: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-icon:hover {
+    background-color: #f0f0f0;
+}
+
 .search-container {
     position: absolute;
     top: 10px;
@@ -16,7 +41,8 @@ body {
     padding: 10px;
     border-radius: 5px;
     z-index: 1000;
-    width: 800px; 
+    width: 80%;
+    max-width: 600px;
 }
 
 .search-container input {
@@ -24,7 +50,8 @@ body {
     margin-right: 8px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    width: 650px; 
+    width: 80%;
+    max-width: 500px;
 }
 
 .search-container button {
@@ -34,9 +61,102 @@ body {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    width: 120px; 
+    width: 80%;
+    max-width: 90px;
 }
 
 .search-container button:hover {
     background-color: #45a049;
+}
+
+.shortcuts-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.shortcuts-container button {
+    padding: 8px 16px;
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.shortcuts-container button:hover {
+    background-color: #286090;
+}
+
+@media (max-width: 1200px) {
+    .search-container {
+        width: 70%;
+    }
+
+    .search-container input {
+        width: 80%;
+    }
+
+    .search-container button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .search-container {
+        width: 50%;
+    }
+
+    .search-container input {
+        width: 80%;
+    }
+
+    .search-container button {
+        width: 17%;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        width: 50%;
+    }
+
+    .search-container input {
+        width: 70%;
+    }
+
+    .search-container button {
+        width: 25%;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        width: 40%;
+    }
+
+    .search-container input {
+        width: 80%;
+    }
+
+    .search-container button {
+        width: 60%;
+    }
+
+    @media (max-width: 375px) {
+        .search-container {
+            width: 30%;
+        }
+    
+        .search-container input {
+            width: 80%;
+        }
+    
+        .search-container button {
+            width: 90%;
+        }
+    }
 }

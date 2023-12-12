@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", async function(){
         const marker = L.marker(
             [attraction.latitude, attraction.longitude]
         );
+        marker.bindPopup(`<b>${attraction.name}</b><br>${attraction.description}`);
         marker.addTo(attractionLayerGroup);
     }
 
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", async function(){
         const marker = L.marker(
             [h.latitude, h.longitude]
         )
+        marker.bindPopup(`<b>${h.name}</b><br>${h.description}`);
         marker.addTo(hawkerLayerGroup);
     }
 
@@ -58,9 +60,6 @@ async function loadData(filePath) {
     const response = await axios.get(filePath);
     return response.data.locations;
 }
-
-
-
 
 function createMap() {
     const map = L.map('map');

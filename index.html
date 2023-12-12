@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,14 +6,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" integrity="sha512-Zcn6bjR/8RZbLEpLIeOwNtzREBAJnUKESxces60Mpoj+2okopSAcSUIUOseddDm0cxnGQzxIR7vJgsLZbdLE3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css"/>
+
 </head>
 <body>
+    <div class="nav-container">
+        <div class="nav-icon">Home</i></div>
+        <div class="nav-icon">Saved</i></i></div>
+        <div class="nav-icon">Recent</i></div>
+    </div>
+
     <div id="map"></div>
 
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search...">
         <button onclick="performSearch()">Search</button>
     </div>
+    <!-- <div class="shortcuts-container">
+        <button onclick="handleShortcut('shortcut1')">Hospitals</button>
+        <button onclick="handleShortcut('shortcut2')">Clinics</button>
+    </div> -->
+
 
     <!-- Leaflet JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -22,6 +34,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

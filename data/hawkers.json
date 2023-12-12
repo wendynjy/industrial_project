@@ -2,26 +2,31 @@
     "locations": [
       {
         "name": "Lau Pa Sat",
+        "description": "Historic hawker center in Singapore's CBD, offering diverse local cuisine in a charming cast-iron structure. A popular spot for locals and tourists to savor a variety of Singaporean dishes.",
         "latitude": "1.2809",
         "longitude": "103.8503"
       },
       {
         "name": "Maxwell Food Centre",
+        "description": "Popular hawker center near Chinatown, Singapore, offering diverse and flavorful local dishes. From Hainanese chicken rice to laksa, it's a bustling spot with a rich food heritage, loved by both locals and tourists.",
         "latitude": "1.2801",
         "longitude": "103.8448"
       },
       {
         "name": "Old Airport Road Food Centre",
+        "description": "Famous Singaporean hawker center near Dakota Crescent, known for a diverse range of local street food. From char kway teow to satay, it's a popular destination capturing the essence of Singapore's culinary heritage.",
         "latitude": "1.3084",
         "longitude": "103.8857"
       },
       {
         "name": "Tiong Bahru Market",
+        "description": "Historic hawker center in Singapore's Tiong Bahru neighborhood, blending traditional and contemporary food stalls. From classic chicken rice to modern local flavors, it's a beloved destination for diverse culinary experiences.",
         "latitude": "1.2846",
         "longitude": "103.8325"
       },
       {
         "name": "Chomp Chomp Food Centre",
+        "description": "A popular hawker center in Singapore's Serangoon Gardens estate, known for its lively atmosphere and diverse local street food. From satay skewers to Hokkien mee, it's a favorite spot for a flavorful culinary experience.",
         "latitude": "1.3652",
         "longitude": "103.8652"
       }
