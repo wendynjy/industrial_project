@@ -24,16 +24,25 @@ document.addEventListener("DOMContentLoaded", async function(){
     }
 
     const controls = L.control.layers({
-        "Attraction": attractionLayerGroup,
-        "Hawkers": hawkerLayerGroup
+        "Singapore's Key Attractions": attractionLayerGroup,
+        "Singapore's Popular Hawkers": hawkerLayerGroup
     });
     controls.addTo(map);
 
     // Search functionality
+
+    function initiateSearch() {
+        performSearch();
+    }
+
     document.getElementById("searchInput").addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
-            performSearch();
+            initiateSearch();
         }
+    });
+
+    document.getElementById("searchButton").addEventListener("click", function () {
+        initiateSearch();
     });
 
     function performSearch() {
