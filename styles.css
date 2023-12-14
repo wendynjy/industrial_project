@@ -100,22 +100,22 @@ body {
     max-height: 150px;
     overflow-y: auto;
     position: absolute;
-    width: 100%;
+    width: calc(78% - 7.8px); /* Adjust the width accordingly */
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    display: block; /* or visibility: visible; */
+    display: block;
 }
-   
+
 #suggestedLocationsList li {
-padding: 10px;
-cursor: pointer;
-border-bottom: 1px solid #eee;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
 }
 
 #suggestedLocationsList li:hover {
-background-color: #f5f5f5;
-}  
+    background-color: #f5f5f5;
+} 
 
 @media (max-width: 1200px) {
     .search-container {

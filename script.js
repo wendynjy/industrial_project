@@ -29,17 +29,19 @@ document.addEventListener("DOMContentLoaded", async function(){
     });
     controls.addTo(map);
 
-    // Search functionality
+    const suggestedLocationsList = document.getElementById("suggestedLocationsList");
+
+    document.getElementById("searchInput").addEventListener("input", function () {
+        initiateSearch();
+    });
+
     function initiateSearch() {
-        const suggestedLocationsList = document.getElementById("suggestedLocationsList");
         const searchInput = document.getElementById("searchInput").value.trim();
-        
-        // Clear previous suggestions
         suggestedLocationsList.innerHTML = '';
-        
+
         if (searchInput !== "") {
             const suggestions = findSuggestions(searchInput);
-    
+
             // Display suggestions
             suggestions.forEach(suggestion => {
                 const listItem = document.createElement("li");
@@ -50,13 +52,7 @@ document.addEventListener("DOMContentLoaded", async function(){
                 suggestedLocationsList.appendChild(listItem);
             });
         }
-    }    
-
-    document.getElementById("searchInput").addEventListener("keypress", function(event) {
-        if (event.key === "Enter") {
-            initiateSearch();
-        }
-    });
+    }
 
     document.getElementById("searchButton").addEventListener("click", function () {
         initiateSearch();
@@ -65,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     function findSuggestions(input) {
         const allLocations = attractions.concat(hawkers);
         const lowercaseInput = input.toLowerCase();
-        
+
         return allLocations.filter(location => location.name.toLowerCase().includes(lowercaseInput));
     }
 
@@ -75,8 +71,6 @@ document.addEventListener("DOMContentLoaded", async function(){
         // Clear suggestions
         suggestedLocationsList.innerHTML = '';
     }
-    
-
 });
 
 async function loadData(filePath) {
