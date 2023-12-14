@@ -73,15 +73,15 @@ document.addEventListener("DOMContentLoaded", async function(){
     }
 
     function setupHomeButtonListener() {
-        const homeButton = document.querySelector(".nav-icon[data-target='home']");
+        const homeButton = document.querySelector("#home");
+        console.log(homeButton);
         if (homeButton) {
-            homeButton.addEventListener("click", function () {
-                clearSearchAndRefresh();
-            });
+            homeButton.addEventListener("click", clearSearchAndRefresh);
         }
     }
 
-    setupHomeButtonListener();
+    // Use setTimeout to delay execution and ensure DOM elements are ready
+    setTimeout(setupHomeButtonListener, 0);
 
     function clearSearchAndRefresh() {
         document.getElementById("searchInput").value = ''; // Clear the search input
