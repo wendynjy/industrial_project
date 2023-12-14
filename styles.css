@@ -91,6 +91,32 @@ body {
     background-color: #286090;
 }
 
+#suggestedLocationsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: block; /* or visibility: visible; */
+}
+   
+#suggestedLocationsList li {
+padding: 10px;
+cursor: pointer;
+border-bottom: 1px solid #eee;
+}
+
+#suggestedLocationsList li:hover {
+background-color: #f5f5f5;
+}  
+
 @media (max-width: 1200px) {
     .search-container {
         width: 70%;

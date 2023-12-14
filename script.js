@@ -30,10 +30,27 @@ document.addEventListener("DOMContentLoaded", async function(){
     controls.addTo(map);
 
     // Search functionality
-
     function initiateSearch() {
-        performSearch();
-    }
+        const suggestedLocationsList = document.getElementById("suggestedLocationsList");
+        const searchInput = document.getElementById("searchInput").value.trim();
+        
+        // Clear previous suggestions
+        suggestedLocationsList.innerHTML = '';
+        
+        if (searchInput !== "") {
+            const suggestions = findSuggestions(searchInput);
+    
+            // Display suggestions
+            suggestions.forEach(suggestion => {
+                const listItem = document.createElement("li");
+                listItem.textContent = suggestion.name;
+                listItem.addEventListener("click", () => {
+                    selectSuggestion(suggestion);
+                });
+                suggestedLocationsList.appendChild(listItem);
+            });
+        }
+    }    
 
     document.getElementById("searchInput").addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
@@ -45,23 +62,20 @@ document.addEventListener("DOMContentLoaded", async function(){
         initiateSearch();
     });
 
-    function performSearch() {
-        const searchInput = document.getElementById("searchInput").value;
-        if (searchInput.trim() !== "") {
-            const searchResult = findLocation(searchInput);
-
-            if (searchResult) {
-                map.flyTo([searchResult.latitude, searchResult.longitude], 15);
-            } else {
-                alert("Location not found.");
-            }
-        }
-    }
-
-    function findLocation(locationName) {
+    function findSuggestions(input) {
         const allLocations = attractions.concat(hawkers);
-        return allLocations.find(location => location.name.toLowerCase() === locationName.toLowerCase());
+        const lowercaseInput = input.toLowerCase();
+        
+        return allLocations.filter(location => location.name.toLowerCase().includes(lowercaseInput));
     }
+
+    function selectSuggestion(suggestion) {
+        document.getElementById("searchInput").value = suggestion.name;
+        map.flyTo([suggestion.latitude, suggestion.longitude], 15);
+        // Clear suggestions
+        suggestedLocationsList.innerHTML = '';
+    }
+    
 
 });
 
