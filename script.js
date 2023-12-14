@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", async function(){
     }
 
     const controls = L.control.layers({
-        "Singapore's Key Attractions": attractionLayerGroup,
-        "Singapore's Popular Hawkers": hawkerLayerGroup
+        "Attractions": attractionLayerGroup,
+        "Hawkers": hawkerLayerGroup
     });
     controls.addTo(map);
 
@@ -70,6 +70,23 @@ document.addEventListener("DOMContentLoaded", async function(){
         map.flyTo([suggestion.latitude, suggestion.longitude], 15);
         // Clear suggestions
         suggestedLocationsList.innerHTML = '';
+    }
+
+    function setupHomeButtonListener() {
+        const homeButton = document.querySelector(".nav-icon[data-target='home']");
+        if (homeButton) {
+            homeButton.addEventListener("click", function () {
+                clearSearchAndRefresh();
+            });
+        }
+    }
+
+    setupHomeButtonListener();
+
+    function clearSearchAndRefresh() {
+        document.getElementById("searchInput").value = ''; // Clear the search input
+        suggestedLocationsList.innerHTML = ''; // Clear the suggestions list
+        location.reload(); // Reload the page
     }
 });
 

@@ -29,6 +29,12 @@
         "description": "A popular hawker center in Singapore's Serangoon Gardens estate, known for its lively atmosphere and diverse local street food. From satay skewers to Hokkien mee, it's a favorite spot for a flavorful culinary experience.",
         "latitude": "1.3652",
         "longitude": "103.8652"
+      },
+      {
+        "name": "Hong Lim Market & Food Centre",
+        "description": "Hong Lim Market & Food Centre in Chinatown, Singapore, is a popular hawker center known for its diverse and affordable local food offerings. It's a must-visit spot to enjoy a variety of delicious Singaporean street food.",
+        "latitude": "1.2854",
+        "longitude": "103.8458"
       }
     ]
 }
