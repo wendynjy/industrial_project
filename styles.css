@@ -139,11 +139,16 @@ body {
     font-size: 20px;
 }
 
-/* Adjust the styling of the side panel content as needed */
 .side-panel #sidePanelContent {
     padding: 20px;
 }
 
+.side-panel #sidePanelContent img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}
 
 @media (max-width: 1200px) {
     .search-container {

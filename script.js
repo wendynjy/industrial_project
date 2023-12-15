@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", async function(){
         sidePanelContent.innerHTML = `
             <h2>${location.name}</h2>
             <a href="${location.linkUrl}" target="_blank">
-            <img src="${location.imageUrl}" alt="Image">
+            <img src="images/MBS.jpg" alt="MBS Image">
             </a>
             <p>${location.description}</p>
             <!-- Add more details as needed -->
