@@ -80,6 +80,9 @@ document.addEventListener("DOMContentLoaded", async function(){
         const sidePanelContent = document.getElementById("sidePanelContent");
         sidePanelContent.innerHTML = `
             <h2>${location.name}</h2>
+            <a href="${location.linkUrl}" target="_blank">
+            <img src="${location.imageUrl}" alt="Image">
+            </a>
             <p>${location.description}</p>
             <!-- Add more details as needed -->
         `;
@@ -92,6 +95,10 @@ document.addEventListener("DOMContentLoaded", async function(){
         const sidePanel = document.getElementById("sidePanel");
         sidePanel.style.width = "300px"; // Set the desired width
     }
+
+    document.getElementById("closeButton").addEventListener("click", function () {
+        closeSidePanel();
+    });
 
     function closeSidePanel() {
         const sidePanel = document.getElementById("sidePanel");
