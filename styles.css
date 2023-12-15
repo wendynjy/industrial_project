@@ -117,6 +117,32 @@ body {
     background-color: #f5f5f5;
 } 
 
+.side-panel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 70;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: #f5f5f5;
+    padding-top: 60px; /* Adjust as needed to avoid overlap with navigation bar */
+    z-index: 800;
+}
+
+.side-panel .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+
+/* Adjust the styling of the side panel content as needed */
+.side-panel #sidePanelContent {
+    padding: 20px;
+}
+
+
 @media (max-width: 1200px) {
     .search-container {
         width: 60%;

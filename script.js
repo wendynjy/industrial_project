@@ -68,8 +68,34 @@ document.addEventListener("DOMContentLoaded", async function(){
     function selectSuggestion(suggestion) {
         document.getElementById("searchInput").value = suggestion.name;
         map.flyTo([suggestion.latitude, suggestion.longitude], 15);
+       
+        // Update side panel content
+        updateSidePanel(suggestion);
+       
         // Clear suggestions
         suggestedLocationsList.innerHTML = '';
+    }
+
+    function updateSidePanel(location) {
+        const sidePanelContent = document.getElementById("sidePanelContent");
+        sidePanelContent.innerHTML = `
+            <h2>${location.name}</h2>
+            <p>${location.description}</p>
+            <!-- Add more details as needed -->
+        `;
+
+        // Open the side panel
+        openSidePanel();
+    }
+
+    function openSidePanel() {
+        const sidePanel = document.getElementById("sidePanel");
+        sidePanel.style.width = "300px"; // Set the desired width
+    }
+
+    function closeSidePanel() {
+        const sidePanel = document.getElementById("sidePanel");
+        sidePanel.style.width = "0";
     }
 
     function setupHomeButtonListener() {
