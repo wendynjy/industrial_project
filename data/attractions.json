@@ -2,30 +2,35 @@
     "locations": [
       {
         "name": "Marina Bay Sands",
+        "image": "images/MBS.jpg",
         "description": "Iconic Singapore resort with a distinctive three-tower design, featuring a sky park, luxury accommodations, a casino, and stunning city views from its infinity pool.",
         "latitude": "1.2834",
         "longitude": "103.8607"
       },
       {
         "name": "Sentosa Island",
+        "image": "images/sentosa.jpeg",
         "description": "Singapore's resort getaway with theme parks, beaches, and entertainment, including Universal Studios and S.E.A. Aquarium. Accessible by cable car or bridge, it's a premier destination for leisure and recreation.",
         "latitude": "1.2494",
         "longitude": "103.8303"
       },
       {
         "name": "Botanic Gardens",
+        "image": "images/botanic.jpeg",
         "description": "A historic green oasis with diverse plant collections, including the UNESCO-listed National Orchid Garden. A popular destination for serene walks and natural beauty in the heart of the city.",
         "latitude": "1.3138",
         "longitude": "103.8159"
       },
       {
         "name": "Chinatown",
+        "image": "images/chinatown.jpeg",
         "description": "vibrant cultural hub, blending traditional architecture, bustling markets, and authentic eateries. With iconic temples like Sri Mariamman, it offers a rich blend of Chinese heritage and modern charm.",
         "latitude": "1.2839",
         "longitude": "103.8442"
       },
       {
         "name": "Orchard Road",
+        "image": "images/orchard.jpg",
         "description": "Singapore's top shopping and entertainment district, featuring upscale malls, designer boutiques, and diverse dining options. A dynamic hub for fashion and culinary experiences in the heart of the city.",
         "latitude": "1.3019",
         "longitude": "103.8380"
