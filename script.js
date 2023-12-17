@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", async function(){
             <a href="${location.linkUrl}" target="_blank">
             <img src="${location.image}">
             </a>
+            <p>${location.address}</p>
             <p>${location.description}</p>
             <!-- Add more details as needed -->
         `;

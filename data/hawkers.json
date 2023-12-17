@@ -3,6 +3,7 @@
       {
         "name": "Lau Pa Sat",
         "image": "images/laupasat.jpg",
+        "address": "<b>Address:</b> 18 Raffles Quay, Singapore 048582",
         "description": "Historic hawker center in Singapore's CBD, offering diverse local cuisine in a charming cast-iron structure. A popular spot for locals and tourists to savor a variety of Singaporean dishes.",
         "latitude": "1.2809",
         "longitude": "103.8503"
@@ -10,6 +11,7 @@
       {
         "name": "Maxwell Food Centre",
         "image": "images/maxwell.jpeg",
+        "address": "<b>Address:</b> 1 Kadayanallur St, Singapore 069184",
         "description": "Popular hawker center near Chinatown, Singapore, offering diverse and flavorful local dishes. From Hainanese chicken rice to laksa, it's a bustling spot with a rich food heritage, loved by both locals and tourists.",
         "latitude": "1.2801",
         "longitude": "103.8448"
@@ -17,6 +19,7 @@
       {
         "name": "Old Airport Road Food Centre",
         "image": "images/oldairport.jpg",
+        "address": "<b>Address:</b> 51 Old Airport Rd, Singapore 390051",
         "description": "Famous Singaporean hawker center near Dakota Crescent, known for a diverse range of local street food. From char kway teow to satay, it's a popular destination capturing the essence of Singapore's culinary heritage.",
         "latitude": "1.3084",
         "longitude": "103.8857"
@@ -24,6 +27,7 @@
       {
         "name": "Tiong Bahru Market",
         "image": "images/tbmarket.jpeg",
+        "address": "<b>Address:</b> 52 Tiong Bahru Rd, Singapore 168716",
         "description": "Historic hawker center in Singapore's Tiong Bahru neighborhood, blending traditional and contemporary food stalls. From classic chicken rice to modern local flavors, it's a beloved destination for diverse culinary experiences.",
         "latitude": "1.2846",
         "longitude": "103.8325"
@@ -31,6 +35,7 @@
       {
         "name": "Chomp Chomp Food Centre",
         "image": "images/chompchomp.jpeg",
+        "address": "<b>Address:</b> 20 Kensington Park Rd, Singapore 557269",
         "description": "A popular hawker center in Singapore's Serangoon Gardens estate, known for its lively atmosphere and diverse local street food. From satay skewers to Hokkien mee, it's a favorite spot for a flavorful culinary experience.",
         "latitude": "1.3652",
         "longitude": "103.8652"
@@ -38,6 +43,7 @@
       {
         "name": "Hong Lim Market & Food Centre",
         "image": "images/honglim.jpeg",
+        "address": "<b>Address:</b> 531A Upper Cross St, Singapore 051531",
         "description": "Hong Lim Market & Food Centre in Chinatown, Singapore, is a popular hawker center known for its diverse and affordable local food offerings. It's a must-visit spot to enjoy a variety of delicious Singaporean street food.",
         "latitude": "1.2854",
         "longitude": "103.8458"
