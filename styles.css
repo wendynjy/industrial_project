@@ -139,6 +139,13 @@ body {
     font-size: 20px;
 }
 
+.side-panel .save-btn {
+    position: absolute;
+    bottom: 65px;
+    left: 10px;
+    font-size: 20px;
+}
+
 .side-panel #sidePanelContent {
     padding: 20px;
 }
