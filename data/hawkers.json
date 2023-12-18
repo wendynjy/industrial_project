@@ -47,6 +47,14 @@
         "description": "Hong Lim Market & Food Centre in Chinatown, Singapore, is a popular hawker center known for its diverse and affordable local food offerings. It's a must-visit spot to enjoy a variety of delicious Singaporean street food.",
         "latitude": "1.2854",
         "longitude": "103.8458"
+      },
+      {
+        "name": "Circuit Road Hawker Centre",
+        "image": "images/circuitroad.jpeg",
+        "address": "<b>Address:</b> 79 &, Circuit Rd, 79A, 370079",
+        "description": "Circuit Road Hawker Centre is a popular hawker center in Singapore known for its diverse and affordable local food offerings. It's a bustling food center where visitors can enjoy a variety of Singaporean dishes, such as chicken rice, laksa, and satay. Keep in mind that the details may have changed, so it's advisable to check for the latest information or reviews for the most up-to-date experience.",
+        "latitude": "1.3261",
+        "longitude": "103.8851"
       }
     ]
 }
