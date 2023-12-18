@@ -39,6 +39,30 @@
         "description": "Singapore's top shopping and entertainment district, featuring upscale malls, designer boutiques, and diverse dining options. A dynamic hub for fashion and culinary experiences in the heart of the city.",
         "latitude": "1.3019",
         "longitude": "103.8380"
+      },
+      {
+        "name": "Singapore Zoo",
+        "image": "images/zoo.jpeg",
+        "address": "<b>Address:</b> 80 Mandai Lake Rd, 729826",
+        "description": "The Singapore Zoo, spanning 28 hectares, is renowned for its open-concept enclosures hosting over 2,800 animals. With a focus on conservation and immersive exhibits, it offers a captivating and educational experience for visitors.",
+        "latitude": "1.4043",
+        "longitude": "103.7930"
+      },
+      {
+        "name": "Singapore Night Safari",
+        "image": "images/night_safari.jpeg",
+        "address": "<b>Address:</b> 80 Mandai Lake Rd, Singapore 729826",
+        "description": "Singapore's Night Safari, the world's first nocturnal wildlife park, offers a unique experience with nighttime animal observation, engaging shows, and a diverse range of nocturnal species in their natural habitats. Visitors can explore the park in a tram or on foot, providing a captivating adventure after sunset.",
+        "latitude": "1.4022",
+        "longitude": "103.7881"
+      },
+      {
+        "name": "Jurong Bird Park",
+        "image": "images/jbp.png",
+        "address": "<b>Address:</b> 2 Jurong Hill, 628925",
+        "description": "Jurong Bird Park, located in Singapore, is one of the world's largest bird parks, featuring diverse aviaries and captivating bird species. Visitors can enjoy interactive exhibits, bird shows, and immersive habitats spread across the expansive park.",
+        "latitude": "1.3187",
+        "longitude": "103.7064"
       }
     ]
 }
