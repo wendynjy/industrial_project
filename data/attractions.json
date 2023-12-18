@@ -71,6 +71,14 @@
         "description": "The Gardens by the Bay is a nature park spanning 101 hectares in the Central Region of Singapore, adjacent to the Marina Reservoir. The park consists of three waterfront gardens: Bay South Garden, Bay East Garden and Bay Central Garden.",
         "latitude": "1.2816",
         "longitude": "103.8636"
+      },
+      {
+        "name": "Singapore Bird Paradise",
+        "image": "images/bird_paradise.jpeg",
+        "address": "<b>Address:</b> 20 Mandai Lake Rd, Singapore 729825",
+        "description": "Bird Paradise is an aviary located in Mandai, Singapore. Opened on 8 May 2023, it replaced the Jurong Bird Park and forms a part of the Mandai Wildlife Reserve, consisting of the Singapore Zoo, Night Safari and River Wonders and the upcoming Rainforest Wild Park.",
+        "latitude": "1.4072",
+        "longitude": "103.7813"
       }
     ]
 }
