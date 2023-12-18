@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", async function(){
             [attraction.latitude, attraction.longitude]
         );
         marker.bindPopup(`<b>${attraction.name}</b><br>${attraction.description}`);
+        marker.on('click', () => {
+            selectMarker(attraction);
+        });
         marker.addTo(attractionLayerGroup);
     }
 
@@ -20,6 +23,9 @@ document.addEventListener("DOMContentLoaded", async function(){
             [h.latitude, h.longitude]
         )
         marker.bindPopup(`<b>${h.name}</b><br>${h.description}`);
+        marker.on('click', () => {
+            selectMarker(h);
+        });
         marker.addTo(hawkerLayerGroup);
     }
 
@@ -121,6 +127,12 @@ document.addEventListener("DOMContentLoaded", async function(){
         document.getElementById("searchInput").value = ''; // Clear the search input
         suggestedLocationsList.innerHTML = ''; // Clear the suggestions list
         location.reload(); // Reload the page
+    }
+
+    function selectMarker(location) {
+        updateSidePanel(location);
+        openSidePanel();
+        map.flyTo([location.latitude, location.longitude], 15);
     }
 });
 
