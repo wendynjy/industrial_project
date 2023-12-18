@@ -63,6 +63,14 @@
         "description": "Jurong Bird Park, located in Singapore, is one of the world's largest bird parks, featuring diverse aviaries and captivating bird species. Visitors can enjoy interactive exhibits, bird shows, and immersive habitats spread across the expansive park.",
         "latitude": "1.3187",
         "longitude": "103.7064"
+      },
+      {
+        "name": "Gardens By The Bay",
+        "image": "images/gbtb.jpeg",
+        "address": "<b>Address:</b> 18 Marina Gardens Dr, Singapore 018953",
+        "description": "The Gardens by the Bay is a nature park spanning 101 hectares in the Central Region of Singapore, adjacent to the Marina Reservoir. The park consists of three waterfront gardens: Bay South Garden, Bay East Garden and Bay Central Garden.",
+        "latitude": "1.2816",
+        "longitude": "103.8636"
       }
     ]
 }
