@@ -29,9 +29,24 @@ document.addEventListener("DOMContentLoaded", async function(){
         marker.addTo(hawkerLayerGroup);
     }
 
+    const hotels = await loadData("data/hotels.json");
+    const hotelLayerGroup = L.layerGroup();
+    hotelLayerGroup.addTo(map);
+    for (let hotel of hotels){
+        const marker = L.marker(
+            [hotel.latitude, hotel.longitude], { icon: createMarkerIcon('hotel') }
+        )
+        marker.bindPopup(`<b>${hotel.name}</b><br>${hotel.description}`);
+        marker.on('click', () => {
+            selectMarker(hotel);
+        });
+        marker.addTo(hotelLayerGroup);
+    }
+
     const controls = L.control.layers({
         "Attractions": attractionLayerGroup,
-        "Hawkers": hawkerLayerGroup
+        "Hawkers": hawkerLayerGroup,
+        "Hotels":hotelLayerGroup
     });
     controls.addTo(map);
 
@@ -65,7 +80,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     });
 
     function findSuggestions(input) {
-        const allLocations = attractions.concat(hawkers);
+        const allLocations = attractions.concat(hawkers, hotels);
         const lowercaseInput = input.toLowerCase();
 
         return allLocations.filter(location => location.name.toLowerCase().includes(lowercaseInput));
@@ -144,6 +159,9 @@ document.addEventListener("DOMContentLoaded", async function(){
         } else if (type === 'hawker') {
             iconUrl = 'images/food_icon-removebg-preview.png';
             iconSize = [50, 50];
+        } else if (type === 'hotel') {
+            iconUrl = 'images/hotel_icon-removebg-preview.png';
+            iconSize = [62, 62];
         }
     
         return L.icon({
