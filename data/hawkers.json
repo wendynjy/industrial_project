@@ -55,6 +55,22 @@
         "description": "Circuit Road Hawker Centre is a popular hawker center in Singapore known for its diverse and affordable local food offerings. It's a bustling food center where visitors can enjoy a variety of Singaporean dishes, such as chicken rice, laksa, and satay. Keep in mind that the details may have changed, so it's advisable to check for the latest information or reviews for the most up-to-date experience.",
         "latitude": "1.3261",
         "longitude": "103.8851"
+      },
+      {
+        "name": "Tekka Centre",
+        "image": "images/tekka.jpeg",
+        "address": "<b>Address:</b> 665 Buffalo Road, Singapore 210665",
+        "description": "Mixed-use market building established in 1915 and located in this building since 1982.",
+        "latitude": "1.3085",
+        "longitude": "103.8521"
+      },
+      {
+        "name": "Newton Food Centre",
+        "image": "images/newton.jpeg",
+        "address": "<b>Address:</b> 500 Clemenceau Avenue North, Singapore 229495",
+        "description": "Lively market with numerous stalls & hawkers offering seafood & local specialities.",
+        "latitude": "1.3120",
+        "longitude": "103.8396"
       }
     ]
 }
