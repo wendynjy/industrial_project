@@ -144,10 +144,6 @@ document.addEventListener("DOMContentLoaded", async function(){
         } else if (type === 'hawker') {
             iconUrl = 'images/food_icon-removebg-preview.png';
             iconSize = [50, 50];
-        } else {
-            // Default icon for other types
-            iconUrl = 'https://raw.githubusercontent.com/wendynjy/industrial_project/main/images/default_icon.png';
-            iconSize = [25, 41];
         }
     
         return L.icon({
@@ -162,18 +158,6 @@ document.addEventListener("DOMContentLoaded", async function(){
         });
     }    
 
-    // function createMarkerIcon(color) {
-    //     return L.icon({
-    //         iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${color}.png`,
-    //         iconSize: [25, 41],
-    //         iconAnchor: [12, 41],
-    //         popupAnchor: [1, -34],
-    //         tooltipAnchor: [16, -28],
-    //         shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
-    //         shadowSize: [41, 41],
-    //         shadowAnchor: [12, 41],
-    //     });
-    // }
 });
 
 async function loadData(filePath) {
