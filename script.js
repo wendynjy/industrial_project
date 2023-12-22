@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     attractionLayerGroup.addTo(map);
     for (let attraction of attractions) {
         const marker = L.marker(
-            [attraction.latitude, attraction.longitude], { icon: createMarkerIcon('red') }
+            [attraction.latitude, attraction.longitude], { icon: createMarkerIcon('attraction') }
         );
         marker.bindPopup(`<b>${attraction.name}</b><br>${attraction.description}`);
         marker.on('click', () => {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     hawkerLayerGroup.addTo(map);
     for (let h of hawkers){
         const marker = L.marker(
-            [h.latitude, h.longitude], { icon: createMarkerIcon('blue') }
+            [h.latitude, h.longitude], { icon: createMarkerIcon('hawker') }
         )
         marker.bindPopup(`<b>${h.name}</b><br>${h.description}`);
         marker.on('click', () => {
@@ -135,10 +135,24 @@ document.addEventListener("DOMContentLoaded", async function(){
         map.flyTo([location.latitude, location.longitude], 15);
     }
 
-    function createMarkerIcon(color) {
+    function createMarkerIcon(type) {
+        let iconUrl, iconSize;
+    
+        if (type === 'attraction') {
+            iconUrl = 'images/camera_icon-removebg-preview.png';
+            iconSize = [100, 80];
+        } else if (type === 'hawker') {
+            iconUrl = 'images/food_icon-removebg-preview.png';
+            iconSize = [50, 50];
+        } else {
+            // Default icon for other types
+            iconUrl = 'https://raw.githubusercontent.com/wendynjy/industrial_project/main/images/default_icon.png';
+            iconSize = [25, 41];
+        }
+    
         return L.icon({
-            iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${color}.png`,
-            iconSize: [25, 41],
+            iconUrl: iconUrl,
+            iconSize: iconSize,
             iconAnchor: [12, 41],
             popupAnchor: [1, -34],
             tooltipAnchor: [16, -28],
@@ -146,7 +160,20 @@ document.addEventListener("DOMContentLoaded", async function(){
             shadowSize: [41, 41],
             shadowAnchor: [12, 41],
         });
-    }
+    }    
+
+    // function createMarkerIcon(color) {
+    //     return L.icon({
+    //         iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${color}.png`,
+    //         iconSize: [25, 41],
+    //         iconAnchor: [12, 41],
+    //         popupAnchor: [1, -34],
+    //         tooltipAnchor: [16, -28],
+    //         shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
+    //         shadowSize: [41, 41],
+    //         shadowAnchor: [12, 41],
+    //     });
+    // }
 });
 
 async function loadData(filePath) {
