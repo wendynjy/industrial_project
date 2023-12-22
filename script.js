@@ -110,8 +110,21 @@ document.addEventListener("DOMContentLoaded", async function(){
 
         // Open the side panel
         openSidePanel();
+
+        // Add event listener for the Save button
+        const saveButton = document.getElementById("saveButton");
+        saveButton.addEventListener("click", () => {
+            saveLocation(location);
+        });
     }
 
+    function saveLocation(location) {
+        let savedLocations = JSON.parse(localStorage.getItem("savedLocations")) || [];
+        savedLocations.push(location);
+        localStorage.setItem("savedLocations", JSON.stringify(savedLocations));
+        alert("Location saved!");
+    }
+    
     function openSidePanel() {
         const sidePanel = document.getElementById("sidePanel");
         sidePanel.style.width = "300px"; // Set the desired width

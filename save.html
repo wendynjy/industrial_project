@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Locations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Saved Locations</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Location Name</th>
+                <th>Image</th>
+                <th>Address</th>
+                <th>Description</th>
+                <th>Action</th>
+                <!-- Add more table headers for additional details if needed -->
+            </tr>
+        </thead>
+        <tbody id="savedLocationsList"></tbody>
+    </table>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            displaySavedLocations();
+        });
+
+        function displaySavedLocations() {
+            const savedLocationsList = document.getElementById("savedLocationsList");
+            savedLocationsList.innerHTML = '';
+
+            const savedLocations = JSON.parse(localStorage.getItem("savedLocations")) || [];
+            savedLocations.forEach((location, index) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${location.name}</td>
+                    <td><img src="${location.image}" alt="Location Image" style="max-width: 100px; max-height: 100px;"></td>
+                    <td>${location.address}</td>
+                    <td>${location.description}</td>
+                    <td><button onclick="removeLocation(${index})">Remove</button></td>
+                    <!-- Add more cells for additional details if needed -->
+                `;
+                savedLocationsList.appendChild(row);
+            });
+        }
+
+        function removeLocation(index) {
+            const savedLocations = JSON.parse(localStorage.getItem("savedLocations")) || [];
+            
+            if (index >= 0 && index < savedLocations.length) {
+                savedLocations.splice(index, 1);
+                localStorage.setItem("savedLocations", JSON.stringify(savedLocations));
+                displaySavedLocations(); // Refresh the display after removal
+            }
+        }
+    </script>
+</body>
+</html>
+
