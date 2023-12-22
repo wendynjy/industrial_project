@@ -72,5 +72,13 @@
         "latitude": "1.3120",
         "longitude": "103.8396"
       }
+      {
+        "name": "Ghim Moh Market & Food Centre",
+        "image": "images/ghimmoh.jpeg",
+        "address": "<b>Address:</b> 20 Ghim Moh Rd, Singapore 270020",
+        "description": "Ghim Moh Market & Food Centre isn’t the most obvious pick when it comes to hawker centres that tourists should check out, but that doesn’t mean it is any less of a hotspot for good food.",
+        "latitude": "1.3110",
+        "longitude": "103.7883"
+      }
     ]
 }
