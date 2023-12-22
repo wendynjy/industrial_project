@@ -119,11 +119,20 @@ document.addEventListener("DOMContentLoaded", async function(){
     }
 
     function saveLocation(location) {
-        let savedLocations = JSON.parse(localStorage.getItem("savedLocations")) || [];
-        savedLocations.push(location);
-        localStorage.setItem("savedLocations", JSON.stringify(savedLocations));
-        alert("Location saved!");
+        const savedLocations = JSON.parse(localStorage.getItem("savedLocations")) || [];
+    
+        // Check if the location is already saved
+        const isAlreadySaved = savedLocations.some(savedLocation => savedLocation.name === location.name);
+    
+        if (!isAlreadySaved) {
+            savedLocations.push(location);
+            localStorage.setItem("savedLocations", JSON.stringify(savedLocations));
+            alert("Location saved!");
+        } else {
+            alert("Location is already saved!");
+        }
     }
+    
     
     function openSidePanel() {
         const sidePanel = document.getElementById("sidePanel");
