@@ -121,12 +121,13 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     top: 0;
     left: 65;
     overflow-x: hidden;
     align-items: center;
     justify-content: center;
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: #f5f5f5;
     padding-top: 60px; /* Adjust as needed to avoid overlap with navigation bar */
     z-index: 800;
@@ -134,16 +135,27 @@ body {
 
 .side-panel .close-btn {
     position: absolute;
+    background-color: #337ab7;
+    color: white;
     bottom: 65px;
     right: 10px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .side-panel .save-btn {
     position: absolute;
+    background-color: #337ab7;
+    color: white;
     bottom: 65px;
     left: 10px;
     font-size: 20px;
+    cursor: pointer;
+}
+
+.side-panel .close-btn:hover,
+.side-panel .save-btn:hover {
+    background-color: #286090;
 }
 
 .side-panel #sidePanelContent {
