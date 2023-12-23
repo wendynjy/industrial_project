@@ -15,6 +15,14 @@
         "description":"This upscale hotel is a 7-min walk from Suntec Convention Centre and 5-min from Bras Basah metro. Refined rooms with free Wi-Fi, flat-screens, and rainfall showers. Some offer city views, with upgraded options including a private lounge. Three restaurants, a bar, and a patisserie on-site, plus an outdoor pool, spa, and gym. <br><br>Check-in time: 14:00 <br>Check-out time: 12:00.",
         "latitude": "1.2960",
         "longitude": "103.8527"
+      },
+      {
+        "name": "Conrad Centennial Singapore",
+        "image": "images/conrad.avif",
+        "address": "<b>Address:</b>  2 Temasek Blvd, Singapore 038982, <b>Tel:</b> 6334 8888",
+        "description":"8 km from Universal Studios SG, features sophisticated rooms with city views. Suites offer free Wi-Fi, coffeemakers, and some with minifridges. Dining includes buffet-style eatery, Cantonese restaurant, elegant bar, and poolside bar. Amenities comprise spa, gym, and outdoor pool. Breakfast available for an extra fee. <br><br>Check-in time: 15:00 <br>Check-out time: 12:00.",
+        "latitude": "1.2936",
+        "longitude": "103.8589"
       }
     ]
 }
