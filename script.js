@@ -43,10 +43,26 @@ document.addEventListener("DOMContentLoaded", async function(){
         marker.addTo(hotelLayerGroup);
     }
 
+    const trains= await loadData("data/mrt.json");
+    const mrtLayer = L.layerGroup();
+    mrtLayer.addTo(map);
+
+    for (let train of trains){
+        const marker = L.marker(
+            [train.latitude, train.longitude], { icon: createMarkerIcon('mrt') }
+        )
+        marker.bindPopup(`<b>${train.station_name}</b><br>${train.type}`);
+        marker.on('click', () => {
+            selectMarker(train);
+        });
+        marker.addTo(mrtLayer);
+    }
+      
     const controls = L.control.layers({
         "Attractions": attractionLayerGroup,
         "Hawkers": hawkerLayerGroup,
-        "Hotels":hotelLayerGroup
+        "Hotels":hotelLayerGroup,
+        "MRT Stations": mrtLayer
     });
     controls.addTo(map);
 
@@ -183,6 +199,9 @@ document.addEventListener("DOMContentLoaded", async function(){
         } else if (type === 'hotel') {
             iconUrl = 'images/hotel_icon-removebg-preview.png';
             iconSize = [62, 62];
+        } else if (type === 'mrt') {
+            iconUrl = 'images/train_icon-removebg-preview.png'; 
+            iconSize = [32, 32];
         }
     
         return L.icon({
