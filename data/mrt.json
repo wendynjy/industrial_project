@@ -4,943 +4,937 @@
         "station_name": "Jurong East",
         "type": "MRT",
         "latitude": "1.333207",
-        "longtitude": "103.742308"
+        "longitude": "103.742308"
         },
         {
         "station_name": "Bukit Batok",
         "type": "MRT",
         "latitude": "1.349069",
-        "longtitude": "103.749596"
+        "longitude": "103.749596"
         },
         {
         "station_name": "Bukit Gombak",
         "type": "MRT",
         "latitude": "1.359043",
-        "longtitude": "103.751863"
+        "longitude": "103.751863"
         },
         {
         "station_name": "Choa Chu Kang",
         "type": "MRT",
         "latitude": "1.385417",
-        "longtitude": "103.744316"
+        "longitude": "103.744316"
         },
         {
         "station_name": "Yew Tee",
         "type": "MRT",
         "latitude": "1.397383",
-        "longtitude": "103.747523"
+        "longitude": "103.747523"
         },
         {
         "station_name": "Kranji",
         "type": "MRT",
         "latitude": "1.425302",
-        "longtitude": "103.762049"
+        "longitude": "103.762049"
         },
         {
         "station_name": "Marsiling",
         "type": "MRT",
         "latitude": "1.432579",
-        "longtitude": "103.77415"
+        "longitude": "103.77415"
         },
         {
         "station_name": "Woodlands",
         "type": "MRT",
         "latitude": "1.436984",
-        "longtitude": "103.786406"
+        "longitude": "103.786406"
         },
         {
         "station_name": "Admiralty",
         "type": "MRT",
         "latitude": "1.436984",
-        "longtitude": "103.786406"
+        "longitude": "103.786406"
         },
         {
         "station_name": "Sembawang",
         "type": "MRT",
         "latitude": "1.449133",
-        "longtitude": "103.82006"
+        "longitude": "103.82006"
         },
         {
         "station_name": "Yishun",
         "type": "MRT",
         "latitude": "1.429666",
-        "longtitude": "103.835044"
+        "longitude": "103.835044"
         },
         {
         "station_name": "Khatib",
         "type": "MRT",
         "latitude": "1.417423",
-        "longtitude": "103.832995"
+        "longitude": "103.832995"
         },
         {
         "station_name": "Yio Chu Kang",
         "type": "MRT",
         "latitude": "1.381765",
-        "longtitude": "103.844923"
+        "longitude": "103.844923"
         },
         {
         "station_name": "Ang Mo Kio",
         "type": "MRT",
         "latitude": "1.370025",
-        "longtitude": "103.849588"
+        "longitude": "103.849588"
         },
         {
         "station_name": "Bishan",
         "type": "MRT",
         "latitude": "1.35092",
-        "longtitude": "103.848206"
+        "longitude": "103.848206"
         },
         {
         "station_name": "Braddell",
         "type": "MRT",
         "latitude": "1.34055",
-        "longtitude": "103.847098"
+        "longitude": "103.847098"
         },
         {
         "station_name": "Toa Payoh",
         "type": "MRT",
         "latitude": "1.332405",
-        "longtitude": "103.847436"
+        "longitude": "103.847436"
         },
         {
         "station_name": "Novena",
         "type": "MRT",
         "latitude": "1.320089",
-        "longtitude": "103.843405"
+        "longitude": "103.843405"
         },
         {
         "station_name": "Newton",
         "type": "MRT",
         "latitude": "1.31383",
-        "longtitude": "103.838021"
+        "longitude": "103.838021"
         },
         {
         "station_name": "Orchard",
         "type": "MRT",
         "latitude": "1.304041",
-        "longtitude": "103.831792"
+        "longitude": "103.831792"
         },
         {
         "station_name": "Somerset",
         "type": "MRT",
         "latitude": "1.300508",
-        "longtitude": "103.838428"
+        "longitude": "103.838428"
         },
         {
         "station_name": "Dhoby Ghaut",
         "type": "MRT",
         "latitude": "1.299169",
-        "longtitude": "103.845799"
+        "longitude": "103.845799"
         },
         {
         "station_name": "City Hall",
         "type": "MRT",
         "latitude": "1.293119",
-        "longtitude": "103.852089"
+        "longitude": "103.852089"
         },
         {
         "station_name": "Raffles Place",
         "type": "MRT",
         "latitude": "1.284001",
-        "longtitude": "103.85155"
+        "longitude": "103.85155"
         },
         {
         "station_name": "Marina Bay",
         "type": "MRT",
         "latitude": "1.276481",
-        "longtitude": "103.854598"
+        "longitude": "103.854598"
         },
         {
         "station_name": "Marina South Pier",
         "type": "MRT",
         "latitude": "1.271422",
-        "longtitude": "103.862503"
+        "longitude": "103.862503"
         },
         {
         "station_name": "Tuas Link",
         "type": "MRT",
         "latitude": "1.340371",
-        "longtitude": "103.636866"
+        "longitude": "103.636866"
         },
         {
         "station_name": "Tuas West Road",
         "type": "MRT",
         "latitude": "1.330075",
-        "longtitude": "103.639636"
+        "longitude": "103.639636"
         },
         {
         "station_name": "Tuas Crescent",
         "type": "MRT",
         "latitude": "1.321091",
-        "longtitude": "103.649075"
+        "longitude": "103.649075"
         },
         {
         "station_name": "Gul Circle",
         "type": "MRT",
         "latitude": "1.319809",
-        "longtitude": "103.66083"
+        "longitude": "103.66083"
         },
         {
         "station_name": "Joo Koon",
         "type": "MRT",
         "latitude": "1.327826",
-        "longtitude": "103.678318"
+        "longitude": "103.678318"
         },
         {
         "station_name": "Pioneer",
         "type": "MRT",
         "latitude": "1.337645",
-        "longtitude": "103.69742"
+        "longitude": "103.69742"
         },
         {
         "station_name": "Boon Lay",
         "type": "MRT",
         "latitude": "1.33862",
-        "longtitude": "103.705817"
+        "longitude": "103.705817"
         },
         {
         "station_name": "Lakeside",
         "type": "MRT",
         "latitude": "1.344264",
-        "longtitude": "103.720797"
+        "longitude": "103.720797"
         },
         {
         "station_name": "Chinese Garden",
         "type": "MRT",
         "latitude": "1.342436",
-        "longtitude": "103.732582"
+        "longitude": "103.732582"
         },
         {
         "station_name": "Clementi",
         "type": "MRT",
         "latitude": "1.314925",
-        "longtitude": "103.765341"
+        "longitude": "103.765341"
         },
         {
         "station_name": "Dover",
         "type": "MRT",
         "latitude": "1.311414",
-        "longtitude": "103.778596"
+        "longitude": "103.778596"
         },
         {
         "station_name": "Buona Vista",
         "type": "MRT",
         "latitude": "1.307337",
-        "longtitude": "103.790046"
+        "longitude": "103.790046"
         },
         {
         "station_name": "Commonwealth",
         "type": "MRT",
         "latitude": "1.302439",
-        "longtitude": "103.798326"
+        "longitude": "103.798326"
         },
         {
         "station_name": "Queenstown",
         "type": "MRT",
         "latitude": "1.294867",
-        "longtitude": "103.805902"
+        "longitude": "103.805902"
         },
         {
         "station_name": "Redhill",
         "type": "MRT",
         "latitude": "1.289674",
-        "longtitude": "103.816787"
+        "longitude": "103.816787"
         },
         {
         "station_name": "Tiong Bahru",
         "type": "MRT",
         "latitude": "1.286555",
-        "longtitude": "103.826956"
+        "longitude": "103.826956"
         },
         {
         "station_name": "Outram Park",
         "type": "MRT",
         "latitude": "1.280319",
-        "longtitude": "103.839459"
+        "longitude": "103.839459"
         },
         {
         "station_name": "Tanjong Pagar",
         "type": "MRT",
         "latitude": "1.276385",
-        "longtitude": "103.846771"
+        "longitude": "103.846771"
         },
         {
         "station_name": "Bugis",
         "type": "MRT",
         "latitude": "1.300747",
-        "longtitude": "103.855873"
+        "longitude": "103.855873"
         },
         {
         "station_name": "Lavender",
         "type": "MRT",
         "latitude": "1.307577",
-        "longtitude": "103.863155"
+        "longitude": "103.863155"
         },
         {
         "station_name": "Kallang",
         "type": "MRT",
         "latitude": "1.311532",
-        "longtitude": "103.871372"
+        "longitude": "103.871372"
         },
         {
         "station_name": "Aljunied",
         "type": "MRT",
         "latitude": "1.316474",
-        "longtitude": "103.882762"
+        "longitude": "103.882762"
         },
         {
         "station_name": "Paya Lebar",
         "type": "MRT",
         "latitude": "1.318214",
-        "longtitude": "103.893133"
+        "longitude": "103.893133"
         },
         {
         "station_name": "Eunos",
         "type": "MRT",
         "latitude": "1.319809",
-        "longtitude": "103.902888"
+        "longitude": "103.902888"
         },
         {
         "station_name": "Kembangan",
         "type": "MRT",
         "latitude": "1.320998",
-        "longtitude": "103.913433"
+        "longitude": "103.913433"
         },
         {
         "station_name": "Bedok",
         "type": "MRT",
         "latitude": "1.324043",
-        "longtitude": "103.930205"
+        "longitude": "103.930205"
         },
         {
         "station_name": "Tanah Merah",
         "type": "MRT",
         "latitude": "1.327309",
-        "longtitude": "103.946479"
+        "longitude": "103.946479"
         },
         {
         "station_name": "Simei",
         "type": "MRT",
         "latitude": "1.343237",
-        "longtitude": "103.953343"
+        "longitude": "103.953343"
         },
         {
         "station_name": "Tampines",
         "type": "MRT",
         "latitude": "1.354467",
-        "longtitude": "103.943325"
+        "longitude": "103.943325"
         },
         {
         "station_name": "Pasir Ris",
         "type": "MRT",
         "latitude": "1.373234",
-        "longtitude": "103.949343"
+        "longitude": "103.949343"
         },
         {
         "station_name": "Expo",
         "type": "MRT",
         "latitude": "1.334479",
-        "longtitude": "103.961459"
+        "longitude": "103.961459"
         },
         {
         "station_name": "Changi Airport",
         "type": "MRT",
         "latitude": "1.357622",
-        "longtitude": "103.988487"
+        "longitude": "103.988487"
         },
         {
         "station_name": "HarbourFront",
         "type": "MRT",
         "latitude": "1.265453",
-        "longtitude": "103.820514"
+        "longitude": "103.820514"
         },
         {
         "station_name": "Chinatown",
         "type": "MRT",
         "latitude": "1.284566",
-        "longtitude": "103.843626"
+        "longitude": "103.843626"
         },
         {
         "station_name": "Clarke Quay",
         "type": "MRT",
         "latitude": "1.288949",
-        "longtitude": "103.847521"
+        "longitude": "103.847521"
         },
         {
         "station_name": "Little India",
         "type": "MRT",
         "latitude": "1.306691",
-        "longtitude": "103.849396"
+        "longitude": "103.849396"
         },
         {
         "station_name": "Farrer Park",
         "type": "MRT",
         "latitude": "1.312679",
-        "longtitude": "103.854872"
+        "longitude": "103.854872"
         },
         {
         "station_name": "Boon Keng",
         "type": "MRT",
         "latitude": "1.320091",
-        "longtitude": "103.861655"
+        "longitude": "103.861655"
         },
         {
         "station_name": "Potong Pasir",
         "type": "MRT",
         "latitude": "1.331316",
-        "longtitude": "103.868779"
+        "longitude": "103.868779"
         },
         {
         "station_name": "Woodleigh",
         "type": "MRT",
         "latitude": "1.339202",
-        "longtitude": "103.870727"
+        "longitude": "103.870727"
         },
         {
         "station_name": "Serangoon",
         "type": "MRT",
         "latitude": "1.349862",
-        "longtitude": "103.873635"
+        "longitude": "103.873635"
         },
         {
         "station_name": "Kovan",
         "type": "MRT",
         "latitude": "1.360207",
-        "longtitude": "103.885163"
+        "longitude": "103.885163"
         },
         {
         "station_name": "Hougang",
         "type": "MRT",
         "latitude": "1.371406",
-        "longtitude": "103.892533"
+        "longitude": "103.892533"
         },
         {
         "station_name": "Buangkok",
         "type": "MRT",
         "latitude": "1.382991",
-        "longtitude": "103.893347"
+        "longitude": "103.893347"
         },
         {
         "station_name": "Sengkang",
         "type": "MRT",
         "latitude": "1.391682",
-        "longtitude": "103.895475"
+        "longitude": "103.895475"
         },
         {
         "station_name": "Punggol",
         "type": "MRT",
         "latitude": "1.405191",
-        "longtitude": "103.902367"
+        "longitude": "103.902367"
         },
         {
         "station_name": "Bras Basah",
         "type": "MRT",
         "latitude": "1.296978",
-        "longtitude": "103.850715"
+        "longitude": "103.850715"
         },
         {
         "station_name": "Esplanade",
         "type": "MRT",
         "latitude": "1.293995",
-        "longtitude": "103.855396"
+        "longitude": "103.855396"
         },
         {
         "station_name": "Promenade",
         "type": "MRT",
         "latitude": "1.294063",
-        "longtitude": "103.860156"
+        "longitude": "103.860156"
         },
         {
         "station_name": "Nicoll Highway",
         "type": "MRT",
         "latitude": "1.300292",
-        "longtitude": "103.863449"
+        "longitude": "103.863449"
         },
         {
         "station_name": "Stadium",
         "type": "MRT",
         "latitude": "1.302847",
-        "longtitude": "103.875417"
+        "longitude": "103.875417"
         },
         {
         "station_name": "Mountbatten",
         "type": "MRT",
         "latitude": "1.306106",
-        "longtitude": "103.883175"
+        "longitude": "103.883175"
         },
         {
         "station_name": "Dakota",
         "type": "MRT",
         "latitude": "1.308474",
-        "longtitude": "103.888825"
+        "longitude": "103.888825"
         },
         {
         "station_name": "MacPherson",
         "type": "MRT",
         "latitude": "1.326769",
-        "longtitude": "103.889901"
+        "longitude": "103.889901"
         },
         {
         "station_name": "Tai Seng",
         "type": "MRT",
         "latitude": "1.33594",
-        "longtitude": "103.887706"
+        "longitude": "103.887706"
         },
         {
         "station_name": "Bartley",
         "type": "MRT",
         "latitude": "1.342923",
-        "longtitude": "103.87966"
+        "longitude": "103.87966"
         },
         {
         "station_name": "Lorong Chuan",
         "type": "MRT",
         "latitude": "1.35153",
-        "longtitude": "103.864957"
+        "longitude": "103.864957"
         },
         {
         "station_name": "Marymount",
         "type": "MRT",
         "latitude": "1.349089",
-        "longtitude": "103.839116"
+        "longitude": "103.839116"
         },
         {
         "station_name": "Caldecott",
         "type": "MRT",
         "latitude": "1.337649",
-        "longtitude": "103.839627"
+        "longitude": "103.839627"
         },
         {
         "station_name": "Botanic Gardens",
         "type": "MRT",
         "latitude": "1.322387",
-        "longtitude": "103.814905"
+        "longitude": "103.814905"
         },
         {
         "station_name": "Farrer Road",
         "type": "MRT",
         "latitude": "1.317606",
-        "longtitude": "103.807711"
+        "longitude": "103.807711"
         },
         {
         "station_name": "Holland Village",
         "type": "MRT",
         "latitude": "1.311189",
-        "longtitude": "103.796119"
+        "longitude": "103.796119"
         },
         {
         "station_name": "one-north",
         "type": "MRT",
         "latitude": "1.299854",
-        "longtitude": "103.787584"
+        "longitude": "103.787584"
         },
         {
         "station_name": "Kent Ridge",
         "type": "MRT",
         "latitude": "1.293629",
-        "longtitude": "103.784441"
+        "longitude": "103.784441"
         },
         {
         "station_name": "Haw Par Villa",
         "type": "MRT",
         "latitude": "1.283149",
-        "longtitude": "103.781991"
+        "longitude": "103.781991"
         },
         {
         "station_name": "Pasir Panjang",
         "type": "MRT",
         "latitude": "1.276111",
-        "longtitude": "103.791893"
+        "longitude": "103.791893"
         },
         {
         "station_name": "Labrador Park",
         "type": "MRT",
         "latitude": "1.27218",
-        "longtitude": "103.802557"
+        "longitude": "103.802557"
         },
         {
         "station_name": "Telok Blangah",
         "type": "MRT",
         "latitude": "1.270769",
-        "longtitude": "103.809878"
+        "longitude": "103.809878"
         },
         {
         "station_name": "Bayfront",
         "type": "MRT",
         "latitude": "1.281371",
-        "longtitude": "103.858998"
+        "longitude": "103.858998"
         },
         {
         "station_name": "Bukit Panjang",
         "type": "MRT",
         "latitude": "1.37834",
-        "longtitude": "103.762452"
+        "longitude": "103.762452"
         },
         {
         "station_name": "Cashew",
         "type": "MRT",
         "latitude": "1.369997",
-        "longtitude": "103.764569"
+        "longitude": "103.764569"
         },
         {
         "station_name": "Hillview",
         "type": "MRT",
         "latitude": "1.363185",
-        "longtitude": "103.767371"
+        "longitude": "103.767371"
         },
         {
         "station_name": "Beauty World",
         "type": "MRT",
         "latitude": "1.341607",
-        "longtitude": "103.775682"
+        "longitude": "103.775682"
         },
         {
         "station_name": "King Albert Park",
         "type": "MRT",
         "latitude": "1.335721",
-        "longtitude": "103.783203"
+        "longitude": "103.783203"
         },
         {
         "station_name": "Sixth Avenue",
         "type": "MRT",
         "latitude": "1.331221",
-        "longtitude": "103.79718"
+        "longitude": "103.79718"
         },
         {
         "station_name": "Tan Kah Kee",
         "type": "MRT",
         "latitude": "1.325826",
-        "longtitude": "103.807959"
+        "longitude": "103.807959"
         },
         {
         "station_name": "Stevens",
         "type": "MRT",
         "latitude": "1.320012",
-        "longtitude": "103.825964"
+        "longitude": "103.825964"
         },
         {
         "station_name": "Rochor",
         "type": "MRT",
         "latitude": "1.303601",
-        "longtitude": "103.852581"
+        "longitude": "103.852581"
         },
         {
         "station_name": "Downtown",
         "type": "MRT",
         "latitude": "1.27949",
-        "longtitude": "103.852802"
+        "longitude": "103.852802"
         },
         {
         "station_name": "Telok Ayer",
         "type": "MRT",
         "latitude": "1.282285",
-        "longtitude": "103.848584"
+        "longitude": "103.848584"
         },
         {
         "station_name": "Fort Canning",
         "type": "MRT",
         "latitude": "1.291631",
-        "longtitude": "103.844621"
+        "longitude": "103.844621"
         },
         {
         "station_name": "Bencoolen",
         "type": "MRT",
         "latitude": "1.298477",
-        "longtitude": "103.849984"
+        "longitude": "103.849984"
         },
         {
         "station_name": "Jalan Besar",
         "type": "MRT",
         "latitude": "1.305551",
-        "longtitude": "103.855443"
+        "longitude": "103.855443"
         },
         {
         "station_name": "Bendemeer",
         "type": "MRT",
         "latitude": "1.313674",
-        "longtitude": "103.863098"
+        "longitude": "103.863098"
         },
         {
         "station_name": "Geylang Bahru",
         "type": "MRT",
         "latitude": "1.321479",
-        "longtitude": "103.871457"
+        "longitude": "103.871457"
         },
         {
         "station_name": "Mattar",
         "type": "MRT",
         "latitude": "1.326878",
-        "longtitude": "103.883304"
+        "longitude": "103.883304"
         },
         {
         "station_name": "Ubi",
         "type": "MRT",
         "latitude": "1.330008",
-        "longtitude": "103.898911"
+        "longitude": "103.898911"
         },
         {
         "station_name": "Kaki Bukit",
         "type": "MRT",
         "latitude": "1.335076",
-        "longtitude": "103.909057"
+        "longitude": "103.909057"
         },
         {
         "station_name": "Bedok North",
         "type": "MRT",
         "latitude": "1.335268",
-        "longtitude": "103.918054"
+        "longitude": "103.918054"
         },
         {
         "station_name": "Bedok Reservoir",
         "type": "MRT",
         "latitude": "1.336595",
-        "longtitude": "103.93307"
+        "longitude": "103.93307"
         },
         {
         "station_name": "Tampines West",
         "type": "MRT",
         "latitude": "1.345583",
-        "longtitude": "103.938244"
+        "longitude": "103.938244"
         },
         {
         "station_name": "Tampines East",
         "type": "MRT",
         "latitude": "1.35631",
-        "longtitude": "103.955471"
+        "longitude": "103.955471"
         },
         {
         "station_name": "Upper Changi",
         "type": "MRT",
         "latitude": "1.342218",
-        "longtitude": "103.961505"
+        "longitude": "103.961505"
         },
         {
         "station_name": "South View",
         "type": "LRT",
         "latitude": "1.380299",
-        "longtitude": "103.745286"
+        "longitude": "103.745286"
         },
         {
         "station_name": "Keat Hong",
         "type": "LRT",
         "latitude": "1.378604",
-        "longtitude": "103.749058"
+        "longitude": "103.749058"
         },
         {
         "station_name": "Teck Whye",
         "type": "LRT",
         "latitude": "1.376738",
-        "longtitude": "103.753665"
+        "longitude": "103.753665"
         },
         {
         "station_name": "Phoenix",
         "type": "LRT",
         "latitude": "1.378798",
-        "longtitude": "103.758021"
+        "longitude": "103.758021"
         },
         {
         "station_name": "Senja",
         "type": "LRT",
         "latitude": "1.382852",
-        "longtitude": "103.762312"
+        "longitude": "103.762312"
         },
         {
         "station_name": "Jelapang",
         "type": "LRT",
         "latitude": "1.386703",
-        "longtitude": "103.764547"
+        "longitude": "103.764547"
         },
         {
         "station_name": "Segar",
         "type": "LRT",
         "latitude": "1.387713",
-        "longtitude": "103.769599"
+        "longitude": "103.769599"
         },
         {
         "station_name": "Fajar",
         "type": "LRT",
         "latitude": "1.384502",
-        "longtitude": "103.770862"
+        "longitude": "103.770862"
         },
         {
         "station_name": "Bangkit",
         "type": "LRT",
         "latitude": "1.380281",
-        "longtitude": "103.772576"
-        },
-        {
-        "station_name": "Pending",
-        "type": "LRT",
-        "latitude": "1.376223",
-        "longtitude": "103.771277"
+        "longitude": "103.772576"
         },
         {
         "station_name": "Petir",
         "type": "LRT",
         "latitude": "1.377828",
-        "longtitude": "103.76655"
+        "longitude": "103.76655"
         },
         {
         "station_name": "Compassvale",
         "type": "LRT",
         "latitude": "1.394615",
-        "longtitude": "103.900443"
+        "longitude": "103.900443"
         },
         {
         "station_name": "Rumbia",
         "type": "LRT",
         "latitude": "1.391553",
-        "longtitude": "103.905947"
+        "longitude": "103.905947"
         },
         {
         "station_name": "Bakau",
         "type": "LRT",
         "latitude": "1.38804",
-        "longtitude": "103.905412"
+        "longitude": "103.905412"
         },
         {
         "station_name": "Kangkar",
         "type": "LRT",
         "latitude": "1.383957",
-        "longtitude": "103.90216"
+        "longitude": "103.90216"
         },
         {
         "station_name": "Ranggung",
         "type": "LRT",
         "latitude": "1.384116",
-        "longtitude": "103.897386"
+        "longitude": "103.897386"
         },
         {
         "station_name": "Cheng Lim",
         "type": "LRT",
         "latitude": "1.396332",
-        "longtitude": "103.89379"
+        "longitude": "103.89379"
         },
         {
         "station_name": "Farmway",
         "type": "LRT",
         "latitude": "1.397178",
-        "longtitude": "103.889168"
+        "longitude": "103.889168"
         },
         {
         "station_name": "Kupang",
         "type": "LRT",
         "latitude": "1.398271",
-        "longtitude": "103.881283"
+        "longitude": "103.881283"
         },
         {
         "station_name": "Thanggam",
         "type": "LRT",
         "latitude": "1.397378",
-        "longtitude": "103.87561"
+        "longitude": "103.87561"
         },
         {
         "station_name": "Fernvale",
         "type": "LRT",
         "latitude": "1.392033",
-        "longtitude": "103.876256"
+        "longitude": "103.876256"
         },
         {
         "station_name": "Layar",
         "type": "LRT",
         "latitude": "1.392141",
-        "longtitude": "103.880022"
+        "longitude": "103.880022"
         },
         {
         "station_name": "Tongkang",
         "type": "LRT",
         "latitude": "1.389519",
-        "longtitude": "103.885829"
+        "longitude": "103.885829"
         },
         {
         "station_name": "Renjong",
         "type": "LRT",
         "latitude": "1.386827",
-        "longtitude": "103.890541"
+        "longitude": "103.890541"
         },
         {
         "station_name": "Cove",
         "type": "LRT",
         "latitude": "1.399534",
-        "longtitude": "103.905792"
+        "longitude": "103.905792"
         },
         {
         "station_name": "Meridian",
         "type": "LRT",
         "latitude": "1.397002",
-        "longtitude": "103.908884"
+        "longitude": "103.908884"
         },
         {
         "station_name": "Coral Edge",
         "type": "LRT",
         "latitude": "1.39392",
-        "longtitude": "103.912633"
+        "longitude": "103.912633"
         },
         {
         "station_name": "Riviera",
         "type": "LRT",
         "latitude": "1.39454",
-        "longtitude": "103.916056"
+        "longitude": "103.916056"
         },
         {
         "station_name": "Kadaloor",
         "type": "LRT",
         "latitude": "1.399633",
-        "longtitude": "103.916536"
+        "longitude": "103.916536"
         },
         {
         "station_name": "Oasis",
         "type": "LRT",
         "latitude": "1.402304",
-        "longtitude": "103.912736"
+        "longitude": "103.912736"
         },
         {
         "station_name": "Damai",
         "type": "LRT",
         "latitude": "1.405293",
-        "longtitude": "103.908606"
+        "longitude": "103.908606"
         },
         {
         "station_name": "Sam Kee",
         "type": "LRT",
         "latitude": "1.409808",
-        "longtitude": "103.90492"
+        "longitude": "103.90492"
         },
         {
         "station_name": "Teck Lee",
         "type": "LRT",
         "latitude": "1.412783",
-        "longtitude": "103.906565"
+        "longitude": "103.906565"
         },
         {
         "station_name": "Punggol Point",
         "type": "LRT",
         "latitude": "1.416932",
-        "longtitude": "103.90668"
+        "longitude": "103.90668"
         },
         {
         "station_name": "Samudera",
         "type": "LRT",
         "latitude": "1.415955",
-        "longtitude": "103.902185"
+        "longitude": "103.902185"
         },
         {
         "station_name": "Nibong",
         "type": "LRT",
         "latitude": "1.411865",
-        "longtitude": "103.900321"
+        "longitude": "103.900321"
         },
         {
         "station_name": "Sumang",
         "type": "LRT",
         "latitude": "1.408501",
-        "longtitude": "103.898605"
+        "longitude": "103.898605"
         },
         {
         "station_name": "Soo Teck",
         "type": "LRT",
         "latitude": "1.405436",
-        "longtitude": "103.897287"
+        "longitude": "103.897287"
         }
     ]
 }

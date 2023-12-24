@@ -52,9 +52,6 @@ document.addEventListener("DOMContentLoaded", async function(){
             [train.latitude, train.longitude], { icon: createMarkerIcon('mrt') }
         )
         marker.bindPopup(`<b>${train.station_name}</b><br>${train.type}`);
-        marker.on('click', () => {
-            selectMarker(train);
-        });
         marker.addTo(mrtLayer);
     }
       
@@ -184,6 +181,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     function selectMarker(location) {
         updateSidePanel(location);
         openSidePanel();
+        
         map.flyTo([location.latitude, location.longitude], 15);
     }
 
