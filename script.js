@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", async function(){
         "Hawkers": hawkerLayerGroup,
         "Hotels":hotelLayerGroup,
         "MRT Stations": mrtLayer,
-        "Fine Dining" : restaurantLayerGroup
+        "Fine Dinings" : restaurantLayerGroup
     });
     controls.addTo(map);
 
