@@ -42,19 +42,19 @@
       },
       {
         "name": "PARKROYAL COLLECTION Marina Bay",
-        "image": "images/panpacific2.jpeg",
+        "image": "images/parkroyal.webp",
         "address": "<b>Address:</b>6 Raffles Blvd, Singapore 039594, <b>Tel:</b> 6845 1000",
         "description":"In the CBD area, an 11-minute walk from Esplanade/Theatres on the Bay, this contemporary high-rise hotel is 2 km from the National Museum of Singapore. Elegant rooms with bay or city views, free WiFi, and flat-screen TVs feature marble bathrooms, ergonomic chairs, and tea/coffee facilities. Amenities include dining options, an outdoor pool, gym, and spa. <br><br>Check-in time: 15:00 <br>Check-out time: 12:00.",
         "latitude": "1.2918",
         "longitude": "103.8571"
       },
       {
-        "name": "PARKROYAL COLLECTION Marina Bay",
-        "image": "images/parkroyal.webp",
-        "address": "<b>Address:</b>6 Raffles Blvd, Singapore 039594, <b>Tel:</b> 6845 1000",
-        "description":"In the CBD area, an 11-minute walk from Esplanade/Theatres on the Bay, this contemporary high-rise hotel is 2 km from the National Museum of Singapore. Elegant rooms with bay or city views, free WiFi, and flat-screen TVs feature marble bathrooms, ergonomic chairs, and tea/coffee facilities. Amenities include dining options, an outdoor pool, gym, and spa. <br><br>Check-in time: 15:00 <br>Check-out time: 12:00.",
-        "latitude": "1.2918",
-        "longitude": "103.8571"
+        "name": "Oasia Hotel Novena",
+        "image": "images/oasia.jpeg",
+        "address": "<b>Address:</b>8 Sinaran Dr, Singapore 307470, <b>Tel:</b> 6664 0333",
+        "description":"A 2-minute walk from Novena metro station, this upscale hotel is 3 km from Orchard Road and 5 km from the Central Business District. Polished rooms with contemporary decor offer Wi-Fi, flat-screen TVs, and high-end linens. Amenities include a fitness center, hot tub, outdoor pool, and a modern bistro. <br><br>Check-in time: 14:00 <br>Check-out time: 12:00.",
+        "latitude": "1.3201",
+        "longitude": "103.8446"
       }
     ]
 }
