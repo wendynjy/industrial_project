@@ -1,0 +1,20 @@
+{
+    "locations": [
+      {
+        "name": "Restaurant Zen",
+        "image": "images/zen.avif",
+        "address": "<b>Address:</b> Restaurant Zen, 41 Bukit Pasoh Road, Singapore 089855, <b>Tel:</b> 6534 8880",
+        "description":"Opening hours: 12pm-5pm, 7pm-10.30pm, Close on Saturday, Sunday and Monday.",
+        "latitude": "1.2795",
+        "longitude": "103.8404"
+      },
+      {
+        "name": "Cloudstreet",
+        "image": "images/cloudstreet.jpeg",
+        "address": "<b>Address:</b> Cloudstreet, 84 Amoy Street, Singapore 069903, <b>Tel:</b> 6513 7868",
+        "description":"Opening hours: 12pm-2pm, 6.30pm-10.30pm, Close on Sunday and Monday.",
+        "latitude": "1.2808",
+        "longitude": "103.8469"
+      }
+    ]
+}
