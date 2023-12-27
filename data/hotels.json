@@ -63,6 +63,22 @@
         "description":"A 14-min walk from Chinatown metro station, this contemporary high-rise hotel is 3 km from Marina Bay Sands and 5 km from Singapore Botanic Gardens. Streamlined rooms feature sleeping lofts, Wi-Fi, flat-screens, and tea/coffee facilities. Amenities include a lap pool, cafe, gym, and free parking (subject to availability.<br><br>Check-in time: 15:00 <br>Check-out time: 11:00.",
         "latitude": "1.2908",
         "longitude": "103.8392"
+      },
+      {
+        "name": "Shangri-La Singapore",
+        "image": "images/shangrila.avif",
+        "address": "<b>Address:</b> 22 Orange Grove Rd, Singapore 258350, <b>Tel:</b> 6737 3644",
+        "description":"Nestled within 15 acres of gardens, this opulent hotel, situated 6 km from Marina Bay Sands and 2.3 km from Singapore Botanic Gardens, offers lavish rooms, multiple dining choices, an outdoor pool, tennis courts, and a deluxe spa.<br><br>Check-in time: 15:00 <br>Check-out time: 12:00.",
+        "latitude": "1.3110",
+        "longitude": "103.8265"
+      },
+      {
+        "name": "Hilton Singapore Orchard",
+        "image": "images/hilton.jpeg",
+        "address": "<b>Address:</b>333 Orchard Rd, Singapore 238867, <b>Tel:</b> 6737 4411",
+        "description":"<br><br>Check-in time: 15:00 <br>Check-out time: 14:00.",
+        "latitude": "1.3019",
+        "longitude": "103.8359"
       }
     ]
 }
