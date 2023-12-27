@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     });
 
     function findSuggestions(input) {
-        const allLocations = attractions.concat(hawkers, hotels);
+        const allLocations = attractions.concat(hawkers, hotels, restaurants);
         const lowercaseInput = input.toLowerCase();
 
         return allLocations.filter(location => location.name.toLowerCase().includes(lowercaseInput));
