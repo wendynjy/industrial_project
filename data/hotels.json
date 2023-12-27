@@ -23,6 +23,38 @@
         "description":"8 km from Universal Studios SG, features sophisticated rooms with city views. Suites offer free Wi-Fi, coffeemakers, and some with minifridges. Dining includes buffet-style eatery, Cantonese restaurant, elegant bar, and poolside bar. Amenities comprise spa, gym, and outdoor pool. Breakfast available for an extra fee. <br><br>Check-in time: 15:00 <br>Check-out time: 12:00.",
         "latitude": "1.2936",
         "longitude": "103.8589"
+      },
+      {
+        "name": "Pan Pacific Serviced Suites Beach Road, Singapore",
+        "image": "images/panpacific.jpeg",
+        "address": "<b>Address:</b>The Plaza, 7500B Beach Rd, #7500B, Singapore 199592, <b>Tel:</b> 6678 8888",
+        "description":"Pan Pacific Serviced Suites Beach Road, Singapore, a 4-star aparthotel in Kallang, offers a prime location within a 15-minute walk to Bugis Street and Suntec Convention & Exhibition Center. Enjoy 180 air-conditioned rooms with kitchenettes, an outdoor pool, and free Wi-Fi. Additional amenities include a fitness center and complimentary self-parking. <br><br>Check-in time: 15:00 <br>Check-out time: 00:00.",
+        "latitude": "1.2995",
+        "longitude": "103.8600"
+      },
+      {
+        "name": "Pan Pacific, Singapore",
+        "image": "images/panpacific2.jpeg",
+        "address": "<b>Address:</b>7 Raffles Blvd, Singapore 039595, <b>Tel:</b> 6336 8111",
+        "description":"Overlooking Marina Bay, this upscale business hotel, a 5-min walk from Promenade MRT Station, offers polished rooms with glass-enclosed bathrooms, free Wi-Fi, flat-screens, and minibars. Suites feature balconies with city or harbor views. Dining includes Japanese, Chinese, and Indian options, a buffet-style eatery, tapas bar, and cafe. Amenities comprise a spa, gym, outdoor pool, and free parking. Room service is available 24/7. <br><br>Check-in time: 15:00 <br>Check-out time: 12:00.",
+        "latitude": "1.2924",
+        "longitude": "103.8586"
+      },
+      {
+        "name": "PARKROYAL COLLECTION Marina Bay",
+        "image": "images/panpacific2.jpeg",
+        "address": "<b>Address:</b>6 Raffles Blvd, Singapore 039594, <b>Tel:</b> 6845 1000",
+        "description":"In the CBD area, an 11-minute walk from Esplanade/Theatres on the Bay, this contemporary high-rise hotel is 2 km from the National Museum of Singapore. Elegant rooms with bay or city views, free WiFi, and flat-screen TVs feature marble bathrooms, ergonomic chairs, and tea/coffee facilities. Amenities include dining options, an outdoor pool, gym, and spa. <br><br>Check-in time: 15:00 <br>Check-out time: 12:00.",
+        "latitude": "1.2918",
+        "longitude": "103.8571"
+      },
+      {
+        "name": "PARKROYAL COLLECTION Marina Bay",
+        "image": "images/parkroyal.webp",
+        "address": "<b>Address:</b>6 Raffles Blvd, Singapore 039594, <b>Tel:</b> 6845 1000",
+        "description":"In the CBD area, an 11-minute walk from Esplanade/Theatres on the Bay, this contemporary high-rise hotel is 2 km from the National Museum of Singapore. Elegant rooms with bay or city views, free WiFi, and flat-screen TVs feature marble bathrooms, ergonomic chairs, and tea/coffee facilities. Amenities include dining options, an outdoor pool, gym, and spa. <br><br>Check-in time: 15:00 <br>Check-out time: 12:00.",
+        "latitude": "1.2918",
+        "longitude": "103.8571"
       }
     ]
 }
