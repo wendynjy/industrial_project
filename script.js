@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async function(){
 
     const restaurants = await loadData("data/finedinings.json");
     const restaurantLayerGroup = L.layerGroup();
-    restaurantLayerGroupLayerGroup.addTo(map);
+    restaurantLayerGroup.addTo(map);
     for (let restaurant of restaurants){
         const marker = L.marker(
             [restaurant.latitude, restaurant.longitude], { icon: createMarkerIcon('restaurant') }
