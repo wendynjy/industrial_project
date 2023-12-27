@@ -15,6 +15,70 @@
         "description":"Opening hours: 12pm-2pm, 6.30pm-10.30pm, Close on Sunday and Monday.",
         "latitude": "1.2808",
         "longitude": "103.8469"
+      },
+      {
+        "name": "Braci",
+        "image": "images/braci.webp",
+        "address": "<b>Address:</b> 52 Boat Quay, #05-01/ #06-01, Singapore 049841, <b>Tel:</b> 6866 1933",
+        "description":"Opening hours: 12pm-1.30pm, 6pm-11pm, Close on Sunday and Monday.",
+        "latitude": "1.2871",
+        "longitude": "103.8493"
+      },
+      {
+        "name": "Restaurant Euphoria",
+        "image": "images/euphoria.jpeg",
+        "address": "<b>Address:</b> 76 Tras St, Singapore 079015, <b>Tel:</b> -",
+        "description":"Opening hours: 12pm-2.30pm, 6.30pm-11pm, Close on Monday.",
+        "latitude": "1.2775",
+        "longitude": "103.8441"
+      },
+      {
+        "name": "Odette",
+        "image": "images/odette.webp",
+        "address": "<b>Address:</b> 1 St Andrew's Rd, #01-04 National Gallery, Singapore 178957, <b>Tel:</b> 6385 0498",
+        "description":"Opening hours: 12pm-2.30pm, 6.30pm-11pm, Close on Monday.",
+        "latitude": "1.2897",
+        "longitude": "103.8514"
+      },
+      {
+        "name": "Hashida Singapore",
+        "image": "images/hashida.png",
+        "address": "<b>Address:</b> 77 Amoy St, Singapore 069896, <b>Tel:</b> 8129 5336",
+        "description":"Opening hours: 12pm-3pm, 7pm-10.30pm, Close on Monday.",
+        "latitude": "1.2805",
+        "longitude": "103.8466"
+      },
+      {
+        "name": "Yan Ting",
+        "image": "images/yanting.jpeg",
+        "address": "<b>Address:</b> 29 Tanglin Rd, Level 1U The St. Regis Singapore, Singapore 247912, <b>Tel:</b> 6506 6887",
+        "description":"Opening hours: 12pm-2.30pm, 6pm-10.30pm, Close on Monday.",
+        "latitude": "1.3056",
+        "longitude": "103.8259"
+      },
+      {
+        "name": "Thevar",
+        "image": "images/thevar.webp",
+        "address": "<b>Address:</b> 9 Keong Saik Rd., Singapore 089117, <b>Tel:</b> 9750 8275",
+        "description":"Opening hours: 5.30pm-11pm, Close on Sunday and Monday.",
+        "latitude": "1.2794",
+        "longitude": "103.8414"
+      },
+      {
+        "name": "NAEUM Restaurant",
+        "image": "images/naenum.JPG",
+        "address": "<b>Address:</b> 161 Telok Ayer St, Singapore 068615, <b>Tel:</b> 8830 5016",
+        "description":"Opening hours: 5.30pm-11pm, Close on Sunday and Monday.",
+        "latitude": "1.2803",
+        "longitude": "103.8475"
+      },
+      {
+        "name": "JAAN By Kirk Westaway",
+        "image": "images/jaan.jpeg",
+        "address": "<b>Address:</b> 2 Stamford Rd, Level 70, Singapore 178882, <b>Tel:</b> 9199 9008",
+        "description":"Opening hours: 11.45am-2.30pm, 6.30pm-10.45pm Close on Sunday and Monday.",
+        "latitude": "1.2933",
+        "longitude": "103.8531"
       }
     ]
 }
