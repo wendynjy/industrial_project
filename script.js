@@ -43,6 +43,20 @@ document.addEventListener("DOMContentLoaded", async function(){
         marker.addTo(hotelLayerGroup);
     }
 
+    const restaurants = await loadData("data/finedinings.json");
+    const restaurantLayerGroup = L.layerGroup();
+    restaurantLayerGroupLayerGroup.addTo(map);
+    for (let restaurant of restaurants){
+        const marker = L.marker(
+            [restaurant.latitude, restaurant.longitude], { icon: createMarkerIcon('restaurant') }
+        )
+        marker.bindPopup(`<b>${restaurant.name}</b><br>${restaurant.description}`);
+        marker.on('click', () => {
+            selectMarker(restaurant);
+        });
+        marker.addTo(restaurantLayerGroup);
+    }
+
     const trains= await loadData("data/mrt.json");
     const mrtLayer = L.layerGroup();
     mrtLayer.addTo(map);
@@ -59,7 +73,8 @@ document.addEventListener("DOMContentLoaded", async function(){
         "Attractions": attractionLayerGroup,
         "Hawkers": hawkerLayerGroup,
         "Hotels":hotelLayerGroup,
-        "MRT Stations": mrtLayer
+        "MRT Stations": mrtLayer,
+        "Fine Dining" : restaurantLayerGroup
     });
     controls.addTo(map);
 
@@ -196,6 +211,9 @@ document.addEventListener("DOMContentLoaded", async function(){
             iconSize = [50, 50];
         } else if (type === 'hotel') {
             iconUrl = 'images/hotel_icon-removebg-preview.png';
+            iconSize = [62, 62];
+        } else if (type === 'restaurant') {
+            iconUrl = 'images/restaurant_icon-removebg-preview.png';
             iconSize = [62, 62];
         } else if (type === 'mrt') {
             iconUrl = 'images/train_icon-removebg-preview.png'; 
