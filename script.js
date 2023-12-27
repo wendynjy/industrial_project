@@ -136,14 +136,17 @@ document.addEventListener("DOMContentLoaded", async function(){
             <!-- Add more details as needed -->
         `;
 
-        // Open the side panel
         openSidePanel();
 
-        // Add event listener for the Save button
         const saveButton = document.getElementById("saveButton");
-        saveButton.addEventListener("click", () => {
+        
+        function saveButtonClickHandler() {
+            saveButton.removeEventListener("click", saveButtonClickHandler);
+
             saveLocation(location);
-        });
+        }
+
+        saveButton.addEventListener("click", saveButtonClickHandler);
     }
 
     function saveLocation(location) {
@@ -193,11 +196,23 @@ document.addEventListener("DOMContentLoaded", async function(){
         location.reload(); // Reload the page
     }
 
+    let selectedMarker = null;
+
     function selectMarker(location) {
+        clearSelectedMarker();
+
         updateSidePanel(location);
         openSidePanel();
         
         map.flyTo([location.latitude, location.longitude], 15);
+    }
+
+    function clearSelectedMarker() {
+        if (selectedMarker) {
+            // Remove the selected marker from the map
+            map.removeLayer(selectedMarker);
+            selectedMarker = null;
+        }
     }
 
     function createMarkerIcon(type) {
