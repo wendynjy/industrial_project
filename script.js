@@ -1,5 +1,16 @@
 document.addEventListener("DOMContentLoaded", async function(){
     const map = createMap();
+
+    const titleControl = L.control({ position: 'bottomright' });
+
+    titleControl.onAdd = function (map) {
+        const div = L.DomUtil.create('div', 'map-title');
+        div.innerHTML = '<h1>Top 10 Places In Singapore</h1>';
+        return div;
+    };
+
+    titleControl.addTo(map);
+
     const attractions = await loadData("data/attractions.json");
     
     const attractionLayerGroup = L.layerGroup();

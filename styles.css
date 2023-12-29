@@ -7,6 +7,18 @@ body {
     height: 100vh;
 }
 
+.map-title {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #73a4c5; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1em;
+}
+
 .nav-container {
     position: fixed;
     top: 0;
