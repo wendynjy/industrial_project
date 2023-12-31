@@ -261,8 +261,8 @@ document.addEventListener("DOMContentLoaded", async function(){
             shadowSize: [41, 41],
             shadowAnchor: [12, 41],
         });
-    }    
-
+    } 
+    
 });
 
 async function loadData(filePath) {

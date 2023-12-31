@@ -19,6 +19,52 @@ body {
     font-size: 1em;
 }
 
+#categoryButtonsContainer {
+    position: absolute;
+    bottom: 250px;
+    right: 20px;
+    z-index: 1000; /* Adjust the z-index as needed */
+}
+
+.category-button {
+    display: block;
+    width: 120px;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #73a4c5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category-button:hover {
+    background-color: #45a049;
+}
+
+#placeListContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+}
+
+#placeList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#placeList li {
+    margin-bottom: 8px;
+}
+
+
 .nav-container {
     position: fixed;
     top: 0;
