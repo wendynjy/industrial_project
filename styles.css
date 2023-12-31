@@ -21,9 +21,9 @@ body {
 
 #categoryButtonsContainer {
     position: absolute;
-    bottom: 250px;
+    bottom: 310px;
     right: 20px;
-    z-index: 1000; /* Adjust the z-index as needed */
+    z-index: 1100; /* Adjust the z-index as needed */
 }
 
 .category-button {
@@ -40,7 +40,7 @@ body {
 }
 
 .category-button:hover {
-    background-color: #45a049;
+    background-color: #3b5e76;
 }
 
 #placeListContainer {
