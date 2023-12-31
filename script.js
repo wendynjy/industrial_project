@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded", async function(){
 
     titleControl.addTo(map);
 
-    const attractions = await loadData("data/attractions.json");
-    
+    const attractions = await loadData("data/attractions.json");   
     const attractionLayerGroup = L.layerGroup();
     attractionLayerGroup.addTo(map);
     for (let attraction of attractions) {
@@ -38,6 +37,20 @@ document.addEventListener("DOMContentLoaded", async function(){
             selectMarker(h);
         });
         marker.addTo(hawkerLayerGroup);
+    }
+
+    const shops = await loadData("data/shopping.json");
+    const shopLayerGroup = L.layerGroup();
+    shopLayerGroup.addTo(map);
+    for (let shop of shops){
+        const marker = L.marker(
+            [h.latitude, h.longitude], { icon: createMarkerIcon('shopping') }
+        )
+        marker.bindPopup(`<b>${shop.name}</b><br>${shop.description}`);
+        marker.on('click', () => {
+            selectMarker(shop);
+        });
+        marker.addTo(shopLayerGroup);
     }
 
     const hotels = await loadData("data/hotels.json");
@@ -85,7 +98,8 @@ document.addEventListener("DOMContentLoaded", async function(){
         "Hawkers": hawkerLayerGroup,
         "Hotels":hotelLayerGroup,
         "MRT Stations": mrtLayer,
-        "Fine Dinings" : restaurantLayerGroup
+        "Fine Dinings" : restaurantLayerGroup,
+        "Shopping Places": shopLayerGroup
     });
     controls.addTo(map);
 
@@ -119,7 +133,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     });
 
     function findSuggestions(input) {
-        const allLocations = attractions.concat(hawkers, hotels, restaurants);
+        const allLocations = attractions.concat(hawkers, hotels, restaurants, shops);
         const lowercaseInput = input.toLowerCase();
 
         return allLocations.filter(location => location.name.toLowerCase().includes(lowercaseInput));
@@ -228,6 +242,9 @@ document.addEventListener("DOMContentLoaded", async function(){
             iconSize = [62, 62];
         } else if (type === 'restaurant') {
             iconUrl = 'images/restaurant_icon-removebg-preview.png';
+            iconSize = [62, 62];
+        }  else if (type === 'shopping') {
+            iconUrl = 'images/shopping-removebg-preview.png';
             iconSize = [62, 62];
         } else if (type === 'mrt') {
             iconUrl = 'images/train_icon-removebg-preview.png'; 
