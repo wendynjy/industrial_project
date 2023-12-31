@@ -1,0 +1,92 @@
+{
+    "locations": [
+      {
+        "name": "Paragon Shopping Centre",
+        "image": "images/paragon.jpeg",
+        "address": "<b>Address:</b> 290 Orchard Rd, Singapore 238859",
+        "description": "The Paragon is a luxury shopping complex located in the Orchard Road area of Singapore.",
+        "latitude": "1.3040",
+        "longitude": "103.8361"
+      },
+      {
+        "name": "ION Orchard",
+        "image": "images/ion.jpeg",
+        "address": "<b>Address:</b> 2 Orchard Turn, Singapore 238801",
+        "description": "ION Orchard, formerly known as the Orchard Turn Development or Orchard Turn Site, is a shopping mall in Singapore, next to Orchard MRT station.",
+        "latitude": "1.3039",
+        "longitude": "103.8319"
+      },
+      {
+        "name": "The Shoppes at Marina Bay Sands",
+        "image": "images/mbs_shop.jpeg",
+        "address": "<b>Address:</b> 8 Bayfront Ave, Singapore 018955",
+        "description": "The Shoppes at Marina Bay Sands is Southeast Asia’s premiere luxury retail destination.",
+        "latitude": "1.2841",
+        "longitude": "103.8595"
+      },
+      {
+        "name": "VivoCity",
+        "image": "images/vivo.png",
+        "address": "<b>Address:</b> 1 HarbourFront Walk, Singapore 098585",
+        "description": "VivoCity is a shopping mall located in the HarbourFront precinct of Bukit Merah, Singapore. It is the largest shopping mall in Singapore, with 99,987 square metres of net lettable area and 142,854 square metres of gross floor area spread over a three-storey shopping complex and two basement levels.",
+        "latitude": "1.2649",
+        "longitude": "103.8221"
+      },
+      {
+        "name": "IMM",
+        "image": "images/imm.jpeg",
+        "address": "<b>Address:</b> 2 Jurong East Street 21, Singapore 60960",
+        "description": "The International Merchandising Mart Mall is an outlet mall owned by CapitaLand Mall Trust, located in Jurong East, Singapore. Opened in 1991, it is a five-storey mall with 961,281 square feet of retail space.",
+        "latitude": "1.3348",
+        "longitude": "103.7468"
+      },
+      {
+        "name": "313@somerset",
+        "image": "images/313.jpeg",
+        "address": "<b>Address:</b>  313 Orchard Rd, Singapore 238895",
+        "description": "Modern, multi-floor mall offering a range of familiar international retailers, with dining options.",
+        "latitude": "1.3010",
+        "longitude": "103.8386"
+      },
+      {
+        "name": "Westgate",
+        "image": "images/westgate.jpeg",
+        "address": "<b>Address:</b> 3 Gateway Dr, Singapore 608532",
+        "description": "Westgate is a lifestyle and family shopping mall in Jurong East, Singapore. It is located close to Jurong East MRT station and Jurong East Bus Interchange. It is also connected with another shopping mall called Jem.",
+        "latitude": "1.3344",
+        "longitude": "103.7428"
+      },
+      {
+        "name": "Tampines 1",
+        "image": "images/tamp.webp",
+        "address": "<b>Address:</b> 3 Gateway Dr, Singapore 608532",
+        "description": "Tampines 1 is a shopping mall located in the east of Singapore next to the Tampines MRT station. The mall opened on 1 April 2009.",
+        "latitude": "1.3540",
+        "longitude": "103.9454"
+      },
+      {
+        "name": "Jem",
+        "image": "images/jem.jpeg",
+        "address": "<b>Address:</b> 50 Jurong Gateway Rd, Singapore 6085492",
+        "description": "Jem is a suburban mall in Jurong East, Singapore. The mall is directly connected to Jurong East MRT station and close to Jurong East Bus Interchange. It is also located adjacent to another mall called Westgate.",
+        "latitude": "1.3326",
+        "longitude": "103.7433"
+      },
+      {
+        "name": "Mandarin Gallery",
+        "image": "images/mg.jpeg",
+        "address": "<b>Address:</b>333A Orchard Rd, Singapore 238897",
+        "description": "Sophisticated retail venue offering designer boutiques, refined cafes & stylish restaurants.",
+        "latitude": "1.3021",
+        "longitude": "103.8363"
+      },
+      {
+        "name": "Takashimaya Shopping Centre",
+        "image": "images/taka.jpeg",
+        "address": "<b>Address:</b>391 Orchard Rd, Singapore 238872",
+        "description": "Shopping mall featuring international brands, dining options & the Takashimaya department store.",
+        "latitude": "1.3029",
+        "longitude": "103.8344"
+      }
+    ]
+}
