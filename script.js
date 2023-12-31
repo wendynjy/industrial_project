@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     shopLayerGroup.addTo(map);
     for (let shop of shops){
         const marker = L.marker(
-            [h.latitude, h.longitude], { icon: createMarkerIcon('shopping') }
+            [shop.latitude, shop.longitude], { icon: createMarkerIcon('shopping') }
         )
         marker.bindPopup(`<b>${shop.name}</b><br>${shop.description}`);
         marker.on('click', () => {
