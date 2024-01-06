@@ -165,14 +165,9 @@ document.addEventListener("DOMContentLoaded", async function(){
 
         const saveButton = document.getElementById("saveButton");
 
-        saveButton.removeEventListener("click", saveButtonClickHandler);
-
-        function saveButtonClickHandler() {
-            saveLocation(location);
-        }
-
-        saveButton.addEventListener("click", saveButtonClickHandler);
+        saveButton.addEventListener("click", () => saveLocation(location));
     }
+
 
     function saveLocation(location) {
         const savedLocations = JSON.parse(localStorage.getItem("savedLocations")) || [];
