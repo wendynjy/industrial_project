@@ -23,12 +23,11 @@ body {
     position: absolute;
     bottom: 310px;
     right: 20px;
-    z-index: 1100; /* Adjust the z-index as needed */
+    z-index: 1100;
 }
 
 .category-button {
     display: block;
-    width: 120px;
     padding: 10px;
     margin-bottom: 8px;
     background-color: #73a4c5;
@@ -239,6 +238,14 @@ body {
     .search-container button {
         width: 90%;
     }
+
+    #categoryButtonsContainer {
+        bottom: 260px;
+    }
+
+    .category-button {
+        padding: 8px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -253,6 +260,14 @@ body {
     .search-container button {
         width: 17%;
     }
+
+    #categoryButtonsContainer {
+        bottom: 220px;
+    }
+
+    .category-button {
+        padding: 6px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -266,6 +281,14 @@ body {
 
     .search-container button {
         width: 30%;
+    }
+
+    #categoryButtonsContainer {
+        bottom: 180px;
+    }
+
+    .category-button {
+        padding: 4px;
     }
 }
 
