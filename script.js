@@ -150,6 +150,9 @@ document.addEventListener("DOMContentLoaded", async function(){
         suggestedLocationsList.innerHTML = '';
     }
 
+    const saveButton = document.getElementById("saveButton");
+    saveButton.addEventListener("click", saveLocation);
+
     function updateSidePanel(location) {
         const sidePanelContent = document.getElementById("sidePanelContent");
 
@@ -163,13 +166,11 @@ document.addEventListener("DOMContentLoaded", async function(){
 
         openSidePanel();
 
-        const saveButton = document.getElementById("saveButton");
-
-        saveButton.addEventListener("click", () => saveLocation(location));
+        saveButton.location = location;
     }
 
-
-    function saveLocation(location) {
+    function saveLocation() {
+        const location = saveButton.location;
         const savedLocations = JSON.parse(localStorage.getItem("savedLocations")) || [];
     
         // Check if the location is already saved
