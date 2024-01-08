@@ -31,12 +31,26 @@
         </div>
     </div>
 
+    <!-- <div id="categoryButtonsContainer">
+        <button id="categoriesButton" class="category-button">Categories</button>
+        <div id="categoryButtons" class="show-categories">
+            <button id="attractionButton" class="category-button">Attractions</button>
+            <button id="hawkerButton" class="category-button">Hawkers</button>
+            <button id="hotelButton" class="category-button">Hotels</button>
+            <button id="restaurantButton" class="category-button">Fine Dinings</button>
+            <button id="shoppingButton" class="category-button">Shopping Places</button>
+        </div>
+    </div> -->
+
     <div id="categoryButtonsContainer">
-        <button id="attractionButton" class="category-button">Attractions</button>
-        <button id="hawkerButton" class="category-button">Hawkers</button>
-        <button id="hotelButton" class="category-button">Hotels</button>
-        <button id="restaurantButton" class="category-button">Fine Dinings</button>
-        <button id="shoppingButton" class="category-button">Shopping Places</button>
+        <select id="categoryDropdown" class="category-button">
+            <option value="" disabled selected>Select a Category</option>
+            <option value="attraction">Attractions</option>
+            <option value="hawker">Hawkers</option>
+            <option value="hotel">Hotels</option>
+            <option value="restaurant">Fine Dinings</option>
+            <option value="shopping">Shopping Places</option>
+        </select>
     </div>
 
     <div id="placeListContainer">
