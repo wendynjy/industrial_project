@@ -21,14 +21,13 @@ body {
 
 #categoryButtonsContainer {
     position: absolute;
-    right: 1px;
+    bottom: 310px;
+    right: 20px;
     z-index: 1100;
-    width: 200px;
 }
 
 .category-button {
     display: block;
-    width: 200px;
     padding: 10px;
     margin-bottom: 8px;
     background-color: #73a4c5;
@@ -39,51 +38,7 @@ body {
     transition: background-color 0.3s;
 }
 
-#categoryDropdown {
-    display: none;
-}
-
-#categoryButtons {
-    display: flex;
-    flex-direction: column;
-    transition: max-height 0.3s ease-out;
-    height: 0;
-}
-
-.show-categories #categoryButtons {
-    height: auto;
-}
-
-#categoryButtons button {
-    display: none;
-}
-
-#categoryDropdown {
-    display: block;
-    width: 120px;
-}
-
-#categoryDropdown:hover,
-#categoryDropdown:focus {
-    background-color: #3b5e76;
-}
-
-#categoryDropdown:hover + #categoryButtons,
-#categoryButtons:hover {
-    display: flex;
-    flex-direction: column;
-}
-
-#categoryDropdown option {
-    background-color: #73a4c5;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#categoryDropdown option:hover {
+.category-button:hover {
     background-color: #3b5e76;
 }
 
@@ -107,6 +62,7 @@ body {
 #placeList li {
     margin-bottom: 8px;
 }
+
 
 .nav-container {
     position: fixed;
@@ -272,7 +228,7 @@ body {
 
 @media (max-width: 1200px) {
     .search-container {
-        width: 70%;
+        width: 60%;
     }
 
     .search-container input {
@@ -280,7 +236,7 @@ body {
     }
 
     .search-container button {
-        width: 100%;
+        width: 90%;
     }
 
     #categoryButtonsContainer {
@@ -294,16 +250,15 @@ body {
 
 @media (max-width: 992px) {
     .search-container {
-        width: 60%;
+        width: 50%;
     }
 
     .search-container input {
         width: 80%;
-        margin-bottom: 10px;
     }
 
     .search-container button {
-        width: 100%;
+        width: 17%;
     }
 
     #categoryButtonsContainer {
@@ -321,12 +276,11 @@ body {
     }
 
     .search-container input {
-        width: 100%;
-        margin-bottom: 10px;
+        width: 85%;
     }
 
     .search-container button {
-        width: 100%;
+        width: 30%;
     }
 
     #categoryButtonsContainer {
@@ -344,8 +298,7 @@ body {
     }
 
     .search-container input {
-        width: 100%;
-        margin-bottom: 10px;
+        width: 80%;
     }
 
     .search-container button {
@@ -358,12 +311,11 @@ body {
         }
     
         .search-container input {
-            width: 100%;
-            margin-bottom: 10px;
+            width: 80%;
         }
     
         .search-container button {
-            width: 100%;
+            width: 90%;
         }
     }
 }
