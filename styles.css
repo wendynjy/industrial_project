@@ -213,6 +213,45 @@ body {
     margin: 0 auto;
 }
 
+.custom-popup-container {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 300px;
+    right: 150px;
+}
+
+.custom-popup-content {
+    padding: 10px;
+}
+
+.attraction-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.custom-popup-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+}
+
+/* Style for positioning the modal */
+.leaflet-map-popup.custom-popup {
+    z-index: 1200; /* Ensure the modal is in front of other elements */
+}
+
+
+
 @media (max-width: 1200px) {
     .search-container {
         width: 70%;

@@ -259,6 +259,95 @@ document.addEventListener("DOMContentLoaded", async function(){
         });
     } 
 
+    async function fetchAttractions() {
+        try {
+            const response = await axios.get('data/attractions.json');
+            return response.data.locations;
+        } catch (error) {
+            console.error('Error fetching attractions:', error);
+            return [];
+        }
+    }
+
+    document.getElementById('categoryDropdown').addEventListener('change', async function () {
+        const selectedCategory = this.value;
+
+        const sidePanelContent = document.getElementById('sidePanelContent');
+        sidePanelContent.innerHTML = '';
+
+        if (selectedCategory === 'attraction') {
+
+            const attractions = await fetchAttractions();
+            showAttractionsModal(attractions);
+        }
+       
+    });
+
+    function showAttractionsModal(attractions) {
+        const modalContainer = document.createElement('div');
+        modalContainer.classList.add('custom-popup-container');
+    
+        const modalContent = document.createElement('div');
+        modalContent.classList.add('custom-popup-content');
+        modalContent.innerHTML = '<h2>Attractions</h2>';
+    
+        const container = document.createElement('div');
+        container.style.maxHeight = '300px';
+        container.style.overflowY = 'auto';
+    
+        attractions.forEach(attraction => {
+            const attractionBox = document.createElement('div');
+            attractionBox.classList.add('attraction-box');
+    
+            const nameElement = document.createElement('h3');
+            nameElement.textContent = attraction.name;
+    
+            const addressElement = document.createElement('p');
+            addressElement.textContent = `Address: ${attraction.address}`;
+    
+            attractionBox.appendChild(nameElement);
+            attractionBox.appendChild(addressElement);
+    
+            container.appendChild(attractionBox);
+        });
+    
+        modalContent.appendChild(container);
+
+        modalContent.addEventListener('wheel', function (event) {
+            event.stopPropagation();
+        });
+    
+        const closeButton = document.createElement('span');
+        closeButton.classList.add('custom-popup-close');
+        closeButton.innerHTML = '&times;'; // Unicode for the close symbol
+        closeButton.addEventListener('click', closeCustomPopup);
+    
+        modalContainer.appendChild(closeButton);
+        modalContainer.appendChild(modalContent);
+    
+        // Calculate the position for the modal (center of the map)
+        const mapCenter = map.getCenter();
+    
+        // Create and show a styled modal
+        const modal = L.DomUtil.create('div', 'leaflet-map-popup custom-popup');
+        modal.appendChild(modalContainer);
+    
+        // Set styles for positioning the modal
+        modal.style.position = 'absolute';
+    
+        // Assuming your map variable is named 'map'
+        map.getPanes().popupPane.appendChild(modal);
+    
+        // Set the position of the custom popup
+        const point = map.latLngToLayerPoint(mapCenter);
+        L.DomUtil.setPosition(modal, point);
+    
+        function closeCustomPopup() {
+            map.getPanes().popupPane.removeChild(modal);
+        }
+    }    
+    
+
 });
 
 async function loadData(filePath) {
