@@ -7,36 +7,8 @@ body {
     height: 100dvh;
 }
 
-#categoryButtonsContainer {
-    position: absolute;
-    top: 150px;
-    right: 10px;
-    z-index: 1000;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-
-#placeListContainer {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    z-index: 2000;
-}
-
-#placeList {
-    list-style-type: none;
-    padding: 0;
-}
-
-#placeList li {
-    margin-bottom: 8px;
+#categoryDropdown {
+    width: 50px;
 }
 
 .nav-container {

@@ -12,6 +12,16 @@
     <div class="nav-container">
         <div class="nav-icon" id="home">Home</div>
         <div class="nav-icon"><a href="save.html" id="saved">Saved</a></div>
+        <div id="categoryButtonsContainer" class="nav-icon">
+            <select id="categoryDropdown" class="category-button">
+                <option value="" disabled selected>List</option>
+                <option value="attraction">Attractions</option>
+                <option value="hawker">Hawkers</option>
+                <option value="hotel">Hotels</option>
+                <option value="restaurant">Fine Dinings</option>
+                <option value="shopping">Shopping Places</option>
+            </select>
+        </div>
         <!-- <div class="nav-icon">Recent</div> -->
     </div>
 
@@ -29,17 +39,6 @@
         <div id="sidePanelContent">
             <!-- Content will be dynamically updated here -->
         </div>
-    </div>
-
-    <div id="categoryButtonsContainer">
-        <select id="categoryDropdown" class="category-button">
-            <option value="" disabled selected>Select a Category List</option>
-            <option value="attraction">Attractions</option>
-            <option value="hawker">Hawkers</option>
-            <option value="hotel">Hotels</option>
-            <option value="restaurant">Fine Dinings</option>
-            <option value="shopping">Shopping Places</option>
-        </select>
     </div>
 
     <div id="placeListContainer">
