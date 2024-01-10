@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", async function(){
 
         modalContent.addEventListener('wheel', function (event) {
             event.stopPropagation();
-        });
+        }, { passive: true });
     
         const closeButton = document.createElement('span');
         closeButton.classList.add('custom-popup-close');
@@ -461,7 +461,7 @@ document.addEventListener("DOMContentLoaded", async function(){
 
         modalContent.addEventListener('wheel', function (event) {
             event.stopPropagation();
-        });
+        }, { passive: true });
     
         const closeButton = document.createElement('span');
         closeButton.classList.add('custom-popup-close');
@@ -558,7 +558,7 @@ document.addEventListener("DOMContentLoaded", async function(){
 
         modalContent.addEventListener('wheel', function (event) {
             event.stopPropagation();
-        });
+        }, { passive: true });
     
         const closeButton = document.createElement('span');
         closeButton.classList.add('custom-popup-close');

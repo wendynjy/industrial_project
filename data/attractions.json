@@ -52,7 +52,7 @@
         "name": "Singapore Night Safari",
         "image": "images/night_safari.jpeg",
         "address": "<b>Address:</b> 80 Mandai Lake Rd, Singapore 729826",
-        "description": "Singapore's Night Safari, the world's first nocturnal wildlife park, offers a unique experience with nighttime animal observation, engaging shows, and a diverse range of nocturnal species in their natural habitats. Visitors can explore the park in a tram or on foot, providing a captivating adventure after sunset.",
+        "description": "Night Safari, the world's first nocturnal wildlife park in Singapore, offers a unique nighttime animal observation experience with tram and on-foot exploration after sunset.",
         "latitude": "1.4022",
         "longitude": "103.7881"
       },
@@ -60,7 +60,7 @@
         "name": "Jurong Bird Park",
         "image": "images/jbp.png",
         "address": "<b>Address:</b> 2 Jurong Hill, 628925",
-        "description": "Jurong Bird Park, located in Singapore, is one of the world's largest bird parks, featuring diverse aviaries and captivating bird species. Visitors can enjoy interactive exhibits, bird shows, and immersive habitats spread across the expansive park.",
+        "description": "Singapore's Jurong Bird Park, among the world's largest, showcases diverse aviaries and captivating bird species. Interactive exhibits, bird shows, and immersive habitats offer a memorable experience.",
         "latitude": "1.3187",
         "longitude": "103.7064"
       },
@@ -76,7 +76,7 @@
         "name": "Singapore Bird Paradise",
         "image": "images/bird_paradise.jpeg",
         "address": "<b>Address:</b> 20 Mandai Lake Rd, Singapore 729825",
-        "description": "Bird Paradise is an aviary located in Mandai, Singapore. Opened on 8 May 2023, it replaced the Jurong Bird Park and forms a part of the Mandai Wildlife Reserve, consisting of the Singapore Zoo, Night Safari and River Wonders and the upcoming Rainforest Wild Park.",
+        "description": "Bird Paradise, in Mandai, Singapore, opened on 8 May 2023, replacing Jurong Bird Park. It's part of the Mandai Wildlife Reserve with Singapore Zoo, Night Safari, River Wonders, and Rainforest Wild Park (upcoming).",
         "latitude": "1.4072",
         "longitude": "103.7813"
       }
