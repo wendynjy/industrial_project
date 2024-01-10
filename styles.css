@@ -127,7 +127,7 @@ body {
     position: fixed;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     top: 0;
-    left: 65;
+    left: 80;
     overflow-x: hidden;
     align-items: center;
     justify-content: center;
@@ -182,7 +182,7 @@ body {
     max-height: 300px;
     overflow-y: auto;
     width: 300px;
-    left: 500px;
+    left: 100px;
     top: 200px;
 }
 
