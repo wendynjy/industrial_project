@@ -331,17 +331,12 @@ document.addEventListener("DOMContentLoaded", async function(){
         modalContainer.appendChild(closeButton);
         modalContainer.appendChild(modalContent);
     
-        const mapCenter = map.getCenter();
-    
         const modal = L.DomUtil.create('div', 'leaflet-map-popup custom-popup');
         modal.appendChild(modalContainer);
     
         modal.style.position = 'absolute';
     
         map.getPanes().popupPane.appendChild(modal);
-    
-        const point = map.latLngToLayerPoint(mapCenter);
-        L.DomUtil.setPosition(modal, point);
     
         function closeCustomPopup() {
             map.getPanes().popupPane.removeChild(modal);
