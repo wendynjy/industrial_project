@@ -266,6 +266,8 @@ document.addEventListener("DOMContentLoaded", async function(){
     }
 
     document.getElementById('categoryDropdown').addEventListener('change', async function () {
+
+        closeSidePanel();
         const selectedCategory = this.value;
 
         const sidePanelContent = document.getElementById('sidePanelContent');
@@ -278,6 +280,8 @@ document.addEventListener("DOMContentLoaded", async function(){
         }
        
     });
+
+    let isAttractionModalOpen = false;
 
     function showAttractionsModal(attractions) {
         const modalContainer = document.createElement('div');
@@ -311,7 +315,9 @@ document.addEventListener("DOMContentLoaded", async function(){
 
             attractionBox.style.cursor = 'pointer';
             attractionBox.addEventListener('click', function () {
+                hideMarkers();
                 flyToAttractionMarker(attraction);
+                modalContainer.style.display = "none";
             });
     
             container.appendChild(attractionBox);
@@ -343,12 +349,34 @@ document.addEventListener("DOMContentLoaded", async function(){
         }
 
         function flyToAttractionMarker(attraction) {
+            hideMarkers();
+
+            const selectedLayerGroup = L.layerGroup().addTo(map);
+        
+            const marker = L.marker(
+                [attraction.latitude, attraction.longitude],
+                { icon: createMarkerIcon('attraction') }
+            );
+        
+            marker.bindPopup(`<b>${attraction.name}</b><br>${attraction.description}`);
+            marker.addTo(selectedLayerGroup);
+        
             map.flyTo([attraction.latitude, attraction.longitude], 15);
 
             updateSidePanel(attraction);
 
             openSidePanel();
         }
+        
+
+        function hideMarkers() {
+            map.eachLayer(layer => {
+                if (layer instanceof L.LayerGroup) {
+                    layer.clearLayers(); // Clear all markers from the layer group
+                }
+            });
+        }
+        
     }    
     
 });
