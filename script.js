@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     }
 
     function selectMarker(location) {
-
+        map.closePopup();
         updateSidePanel(location);
         openSidePanel();
         
