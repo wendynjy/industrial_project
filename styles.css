@@ -4,7 +4,7 @@ body {
 }
 
 #map {
-    height: 100dvh;
+    height: 100vh;
 }
 
 #categoryDropdown {
@@ -141,7 +141,7 @@ body {
     position: absolute;
     background-color: #337ab7;
     color: white;
-    bottom: 80px;
+    bottom: 75px;
     right: 10px;
     font-size: 12px;
     cursor: pointer;
@@ -151,7 +151,7 @@ body {
     position: absolute;
     background-color: #337ab7;
     color: white;
-    bottom: 80px;
+    bottom: 75px;
     left: 10px;
     font-size: 12px;
     cursor: pointer;
