@@ -208,12 +208,12 @@ body {
 
 /* Style for positioning the modal */
 .leaflet-map-popup.custom-popup {
-    z-index: 1200; /* Ensure the modal is in front of other elements */
+    z-index: 1200;
 }
 
 .attraction-box:hover {
-    background-color: #f0f0f0; /* Change the background color on hover */
-    cursor: pointer; /* Change the cursor on hover */
+    background-color: #f0f0f0;
+    cursor: pointer; 
 }
 
 @media (max-width: 1200px) {
