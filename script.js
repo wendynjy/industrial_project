@@ -301,9 +301,14 @@ document.addEventListener("DOMContentLoaded", async function(){
     
             const nameElement = document.createElement('h3');
             nameElement.textContent = attraction.name;
+
+            const tempElement = document.createElement('div');
+            tempElement.innerHTML = attraction.address;
+
+            const cleanAddress = tempElement.textContent || tempElement.innerText;
     
             const addressElement = document.createElement('p');
-            addressElement.textContent = `Address: ${attraction.address}`;
+            addressElement.textContent = cleanAddress;
     
             attractionBox.appendChild(nameElement);
             attractionBox.appendChild(addressElement);
