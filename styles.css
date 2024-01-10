@@ -164,6 +164,7 @@ body {
 
 .side-panel #sidePanelContent {
     padding: 20px;
+    font-size: small;
 }
 
 .side-panel #sidePanelContent img {
