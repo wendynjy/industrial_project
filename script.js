@@ -322,6 +322,10 @@ document.addEventListener("DOMContentLoaded", async function(){
             const hawkers = await fetchHawkers();
             showHawkersModal(hawkers);
         }
+        if (selectedCategory === 'hotel') {
+            const hotels = await fetchHotels();
+            showHotelsModal(hotels);
+        }
        
     });
 
@@ -504,6 +508,103 @@ document.addEventListener("DOMContentLoaded", async function(){
             map.flyTo([hawker.latitude, hawker.longitude], 15);
 
             updateSidePanel(hawker);
+
+            openSidePanel();
+        }
+        
+
+        function hideMarkers() {
+            map.eachLayer(layer => {
+                if (layer instanceof L.LayerGroup) {
+                    layer.clearLayers(); // Clear all markers from the layer group
+                }
+            });
+        }
+        
+    } 
+
+    function showHotelsModal(hotels) {
+        closeExistingModals();
+        const modalContainer = document.createElement('div');
+        modalContainer.classList.add('custom-popup-container');
+    
+        const modalContent = document.createElement('div');
+        modalContent.classList.add('custom-popup-content');
+        modalContent.innerHTML = '<h2>Top 10 Hotels in Singapore</h2>';
+    
+        const container = document.createElement('div');
+        container.style.maxHeight = '300px';
+        container.style.overflowY = 'auto';
+    
+        hotels.forEach(hotel => {
+            const attractionBox = document.createElement('div');
+            attractionBox.classList.add('attraction-box');
+    
+            const nameElement = document.createElement('h3');
+            nameElement.textContent = hotel.name;
+
+            const tempElement = document.createElement('div');
+            tempElement.innerHTML = hotel.address;
+
+            const cleanAddress = tempElement.textContent || tempElement.innerText;
+    
+            const addressElement = document.createElement('p');
+            addressElement.textContent = cleanAddress;
+    
+            attractionBox.appendChild(nameElement);
+            attractionBox.appendChild(addressElement);
+
+            attractionBox.style.cursor = 'pointer';
+            attractionBox.addEventListener('click', function () {
+                hideMarkers();
+                flyToAttractionMarker(hotel);
+                modalContainer.style.display = "none";
+            });
+    
+            container.appendChild(attractionBox);
+        });
+    
+        modalContent.appendChild(container);
+
+        modalContent.addEventListener('wheel', function (event) {
+            event.stopPropagation();
+        });
+    
+        const closeButton = document.createElement('span');
+        closeButton.classList.add('custom-popup-close');
+        closeButton.innerHTML = '&times;'; 
+        closeButton.addEventListener('click', closeCustomPopup);
+    
+        modalContainer.appendChild(closeButton);
+        modalContainer.appendChild(modalContent);
+    
+        const modal = L.DomUtil.create('div', 'leaflet-map-popup custom-popup');
+        modal.appendChild(modalContainer);
+    
+        modal.style.position = 'absolute';
+    
+        map.getPanes().popupPane.appendChild(modal);
+    
+        function closeCustomPopup() {
+            map.getPanes().popupPane.removeChild(modal);
+        }
+
+        function flyToAttractionMarker(hotel) {
+            hideMarkers();
+
+            const selectedLayerGroup = L.layerGroup().addTo(map);
+        
+            const marker = L.marker(
+                [hotel.latitude, hotel.longitude],
+                { icon: createMarkerIcon('hotel') }
+            );
+        
+            marker.bindPopup(`<b>${hotel.name}</b><br>${hotel.description}`);
+            marker.addTo(selectedLayerGroup);
+        
+            map.flyTo([hotel.latitude, hotel.longitude], 15);
+
+            updateSidePanel(hotel);
 
             openSidePanel();
         }
