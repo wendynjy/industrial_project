@@ -326,6 +326,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     });
 
     function showAttractionsModal(attractions) {
+        closeExistingModals();
         const modalContainer = document.createElement('div');
         modalContainer.classList.add('custom-popup-container');
     
@@ -422,6 +423,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     }  
     
     function showHawkersModal(hawkers) {
+        closeExistingModals();
         const modalContainer = document.createElement('div');
         modalContainer.classList.add('custom-popup-container');
     
@@ -516,6 +518,13 @@ document.addEventListener("DOMContentLoaded", async function(){
         }
         
     } 
+
+    function closeExistingModals() {
+        const existingModals = document.querySelectorAll('.leaflet-map-popup.custom-popup');
+        existingModals.forEach(modal => {
+            map.getPanes().popupPane.removeChild(modal);
+        });
+    }
     
 });
 
