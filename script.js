@@ -130,11 +130,15 @@ document.addEventListener("DOMContentLoaded", async function(){
     }
 
     function selectSuggestion(suggestion) {
+
         document.getElementById("searchInput").value = suggestion.name;
-        map.flyTo([suggestion.latitude, suggestion.longitude], 15);
-       
+        map.flyTo([suggestion.latitude, suggestion.longitude], 15); 
         updateSidePanel(suggestion);
-       
+        hideMarkers();
+
+        var suggestionMarker = L.marker([suggestion.latitude, suggestion.longitude]).addTo(map);
+        suggestionMarker.bindPopup(`<b>${suggestion.name}</b><br>${suggestion.description}`);
+
         suggestedLocationsList.innerHTML = '';
     }
 
@@ -413,15 +417,6 @@ document.addEventListener("DOMContentLoaded", async function(){
             openSidePanel();
         }
         
-
-        function hideMarkers() {
-            map.eachLayer(layer => {
-                if (layer instanceof L.LayerGroup) {
-                    layer.clearLayers(); // Clear all markers from the layer group
-                }
-            });
-        }
-        
     }  
     
     function showHawkersModal(hawkers) {
@@ -508,17 +503,7 @@ document.addEventListener("DOMContentLoaded", async function(){
             updateSidePanel(hawker);
 
             openSidePanel();
-        }
-        
-
-        function hideMarkers() {
-            map.eachLayer(layer => {
-                if (layer instanceof L.LayerGroup) {
-                    layer.clearLayers(); // Clear all markers from the layer group
-                }
-            });
-        }
-        
+        }    
     } 
 
     function showHotelsModal(hotels) {
@@ -605,17 +590,7 @@ document.addEventListener("DOMContentLoaded", async function(){
             updateSidePanel(hotel);
 
             openSidePanel();
-        }
-        
-
-        function hideMarkers() {
-            map.eachLayer(layer => {
-                if (layer instanceof L.LayerGroup) {
-                    layer.clearLayers(); // Clear all markers from the layer group
-                }
-            });
-        }
-        
+        }       
     } 
 
     function showShoppingsModal(shoppings) {
@@ -702,15 +677,6 @@ document.addEventListener("DOMContentLoaded", async function(){
             updateSidePanel(shopping);
 
             openSidePanel();
-        }
-        
-
-        function hideMarkers() {
-            map.eachLayer(layer => {
-                if (layer instanceof L.LayerGroup) {
-                    layer.clearLayers(); // Clear all markers from the layer group
-                }
-            });
         }
         
     } 
@@ -801,15 +767,6 @@ document.addEventListener("DOMContentLoaded", async function(){
             openSidePanel();
         }
         
-
-        function hideMarkers() {
-            map.eachLayer(layer => {
-                if (layer instanceof L.LayerGroup) {
-                    layer.clearLayers(); // Clear all markers from the layer group
-                }
-            });
-        }
-        
     } 
 
     function closeExistingModals() {
@@ -818,7 +775,14 @@ document.addEventListener("DOMContentLoaded", async function(){
             map.getPanes().popupPane.removeChild(modal);
         });
     }
-    
+
+    function hideMarkers() {
+        map.eachLayer(layer => {
+            if (layer instanceof L.LayerGroup) {
+                layer.clearLayers(); // Clear all markers from the layer group
+            }
+        });
+    }
 });
 
 async function loadData(filePath) {
