@@ -250,7 +250,10 @@ body {
     z-index: 1200; /* Ensure the modal is in front of other elements */
 }
 
-
+.attraction-box:hover {
+    background-color: #f0f0f0; /* Change the background color on hover */
+    cursor: pointer; /* Change the cursor on hover */
+}
 
 @media (max-width: 1200px) {
     .search-container {

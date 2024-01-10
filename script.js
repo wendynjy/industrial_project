@@ -312,6 +312,11 @@ document.addEventListener("DOMContentLoaded", async function(){
     
             attractionBox.appendChild(nameElement);
             attractionBox.appendChild(addressElement);
+
+            attractionBox.style.cursor = 'pointer';
+            attractionBox.addEventListener('click', function () {
+                flyToAttractionMarker(attraction);
+            });
     
             container.appendChild(attractionBox);
         });
@@ -324,35 +329,37 @@ document.addEventListener("DOMContentLoaded", async function(){
     
         const closeButton = document.createElement('span');
         closeButton.classList.add('custom-popup-close');
-        closeButton.innerHTML = '&times;'; // Unicode for the close symbol
+        closeButton.innerHTML = '&times;'; 
         closeButton.addEventListener('click', closeCustomPopup);
     
         modalContainer.appendChild(closeButton);
         modalContainer.appendChild(modalContent);
     
-        // Calculate the position for the modal (center of the map)
         const mapCenter = map.getCenter();
     
-        // Create and show a styled modal
         const modal = L.DomUtil.create('div', 'leaflet-map-popup custom-popup');
         modal.appendChild(modalContainer);
     
-        // Set styles for positioning the modal
         modal.style.position = 'absolute';
     
-        // Assuming your map variable is named 'map'
         map.getPanes().popupPane.appendChild(modal);
     
-        // Set the position of the custom popup
         const point = map.latLngToLayerPoint(mapCenter);
         L.DomUtil.setPosition(modal, point);
     
         function closeCustomPopup() {
             map.getPanes().popupPane.removeChild(modal);
         }
+
+        function flyToAttractionMarker(attraction) {
+            map.flyTo([attraction.latitude, attraction.longitude], 15);
+
+            updateSidePanel(attraction);
+
+            openSidePanel();
+        }
     }    
     
-
 });
 
 async function loadData(filePath) {
