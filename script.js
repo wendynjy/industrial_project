@@ -265,23 +265,65 @@ document.addEventListener("DOMContentLoaded", async function(){
         }
     }
 
+    async function fetchHawkers() {
+        try {
+            const response = await axios.get('data/hawkers.json');
+            return response.data.locations;
+        } catch (error) {
+            console.error('Error fetching hawkers:', error);
+            return [];
+        }
+    }
+
+    async function fetchHotels() {
+        try {
+            const response = await axios.get('data/hotels.json');
+            return response.data.locations;
+        } catch (error) {
+            console.error('Error fetching hotels:', error);
+            return [];
+        }
+    }
+
+    async function fetchShopping() {
+        try {
+            const response = await axios.get('data/shopping.json');
+            return response.data.locations;
+        } catch (error) {
+            console.error('Error fetching shoppings:', error);
+            return [];
+        }
+    }
+
+    async function fetchFineDinings() {
+        try {
+            const response = await axios.get('data/finedinings.json');
+            return response.data.locations;
+        } catch (error) {
+            console.error('Error fetching fine dinings:', error);
+            return [];
+        }
+    }
+
     document.getElementById('categoryDropdown').addEventListener('change', async function () {
 
         closeSidePanel();
+
         const selectedCategory = this.value;
 
         const sidePanelContent = document.getElementById('sidePanelContent');
         sidePanelContent.innerHTML = '';
 
         if (selectedCategory === 'attraction') {
-
             const attractions = await fetchAttractions();
             showAttractionsModal(attractions);
         }
+        if (selectedCategory === 'hawker') {
+            const hawkers = await fetchHawkers();
+            showHawkersModal(hawkers);
+        }
        
     });
-
-    let isAttractionModalOpen = false;
 
     function showAttractionsModal(attractions) {
         const modalContainer = document.createElement('div');
@@ -289,7 +331,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     
         const modalContent = document.createElement('div');
         modalContent.classList.add('custom-popup-content');
-        modalContent.innerHTML = '<h2>Attractions</h2>';
+        modalContent.innerHTML = '<h2>Top 10 Attractions in Singapore</h2>';
     
         const container = document.createElement('div');
         container.style.maxHeight = '300px';
@@ -377,7 +419,103 @@ document.addEventListener("DOMContentLoaded", async function(){
             });
         }
         
-    }    
+    }  
+    
+    function showHawkersModal(hawkers) {
+        const modalContainer = document.createElement('div');
+        modalContainer.classList.add('custom-popup-container');
+    
+        const modalContent = document.createElement('div');
+        modalContent.classList.add('custom-popup-content');
+        modalContent.innerHTML = '<h2>Top 10 Hawkers in Singapore</h2>';
+    
+        const container = document.createElement('div');
+        container.style.maxHeight = '300px';
+        container.style.overflowY = 'auto';
+    
+        hawkers.forEach(hawker => {
+            const attractionBox = document.createElement('div');
+            attractionBox.classList.add('attraction-box');
+    
+            const nameElement = document.createElement('h3');
+            nameElement.textContent = hawker.name;
+
+            const tempElement = document.createElement('div');
+            tempElement.innerHTML = hawker.address;
+
+            const cleanAddress = tempElement.textContent || tempElement.innerText;
+    
+            const addressElement = document.createElement('p');
+            addressElement.textContent = cleanAddress;
+    
+            attractionBox.appendChild(nameElement);
+            attractionBox.appendChild(addressElement);
+
+            attractionBox.style.cursor = 'pointer';
+            attractionBox.addEventListener('click', function () {
+                hideMarkers();
+                flyToAttractionMarker(hawker);
+                modalContainer.style.display = "none";
+            });
+    
+            container.appendChild(attractionBox);
+        });
+    
+        modalContent.appendChild(container);
+
+        modalContent.addEventListener('wheel', function (event) {
+            event.stopPropagation();
+        });
+    
+        const closeButton = document.createElement('span');
+        closeButton.classList.add('custom-popup-close');
+        closeButton.innerHTML = '&times;'; 
+        closeButton.addEventListener('click', closeCustomPopup);
+    
+        modalContainer.appendChild(closeButton);
+        modalContainer.appendChild(modalContent);
+    
+        const modal = L.DomUtil.create('div', 'leaflet-map-popup custom-popup');
+        modal.appendChild(modalContainer);
+    
+        modal.style.position = 'absolute';
+    
+        map.getPanes().popupPane.appendChild(modal);
+    
+        function closeCustomPopup() {
+            map.getPanes().popupPane.removeChild(modal);
+        }
+
+        function flyToAttractionMarker(hawker) {
+            hideMarkers();
+
+            const selectedLayerGroup = L.layerGroup().addTo(map);
+        
+            const marker = L.marker(
+                [hawker.latitude, hawker.longitude],
+                { icon: createMarkerIcon('hawker') }
+            );
+        
+            marker.bindPopup(`<b>${hawker.name}</b><br>${hawker.description}`);
+            marker.addTo(selectedLayerGroup);
+        
+            map.flyTo([hawker.latitude, hawker.longitude], 15);
+
+            updateSidePanel(hawker);
+
+            openSidePanel();
+        }
+        
+
+        function hideMarkers() {
+            map.eachLayer(layer => {
+                if (layer instanceof L.LayerGroup) {
+                    layer.clearLayers(); // Clear all markers from the layer group
+                }
+            });
+        }
+        
+    } 
     
 });
 
