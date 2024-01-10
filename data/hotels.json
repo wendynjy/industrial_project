@@ -12,7 +12,7 @@
         "name": "Carlton Hotel Singapore",
         "image": "images/carlton.jpg",
         "address": "<b>Address:</b> 76 Bras Basah Rd, Singapore 189558, <b>Tel:</b> 6338 8333",
-        "description":"This upscale hotel is a 7-min walk from Suntec Convention Centre and 5-min from Bras Basah metro. Refined rooms with free Wi-Fi, flat-screens, and rainfall showers. Some offer city views, with upgraded options including a private lounge. Three restaurants, a bar, and a patisserie on-site, plus an outdoor pool, spa, and gym. <br><br>Check-in time: 14:00 <br>Check-out time: 12:00.",
+        "description":"Luxury hotel, 7-min walk to Suntec Convention Centre, 5-min to Bras Basah metro. Elegant rooms with free Wi-Fi, city views, three dining options, pool, spa, gym. <br><br>Check-in time: 14:00 <br>Check-out time: 12:00.",
         "latitude": "1.2960",
         "longitude": "103.8527"
       },
@@ -20,7 +20,7 @@
         "name": "Conrad Centennial Singapore",
         "image": "images/conrad.avif",
         "address": "<b>Address:</b>  2 Temasek Blvd, Singapore 038982, <b>Tel:</b> 6334 8888",
-        "description":"8 km from Universal Studios SG, features sophisticated rooms with city views. Suites offer free Wi-Fi, coffeemakers, and some with minifridges. Dining includes buffet-style eatery, Cantonese restaurant, elegant bar, and poolside bar. Amenities comprise spa, gym, and outdoor pool. Breakfast available for an extra fee. <br><br>Check-in time: 15:00 <br>Check-out time: 12:00.",
+        "description":"8 km from Universal Studios SG, sophisticated rooms with city views. Suites include free Wi-Fi, coffeemakers. Dining options, spa, gym, outdoor pool, and breakfast (extra fee). <br><br>Check-in time: 15:00 <br>Check-out time: 12:00.",
         "latitude": "1.2936",
         "longitude": "103.8589"
       },
@@ -44,7 +44,7 @@
         "name": "ParkRoyal Collection Marina Bay",
         "image": "images/parkroyal.webp",
         "address": "<b>Address:</b>6 Raffles Blvd, Singapore 039594, <b>Tel:</b> 6845 1000",
-        "description":"In the CBD, 11 min from Esplanade/Theatres on the Bay, this high-rise hotel is 2 km from the National Museum of Singapore. Elegant rooms with bay/city views, free WiFi, flat-screens, and marble bathrooms. Amenities: dining, outdoor pool, gym, and spa. <br><br>Check-in time: 15:00 <br>Check-out time: 12:00.",
+        "description":"In the CBD, 11 min from Esplanade/Theatres on the Bay, 2 km from National Museum. Elegant rooms, bay/city views, free WiFi, dining, outdoor pool, gym, spa. <br><br>Check-in time: 15:00 <br>Check-out time: 12:00.",
         "latitude": "1.2918",
         "longitude": "103.8571"
       },
@@ -60,7 +60,7 @@
         "name": "Studio M",
         "image": "images/oasia.jpeg",
         "address": "<b>Address:</b>3 Nanson Rd, Singapore 238910, <b>Tel:</b> 6808 8888",
-        "description":"A 14-min walk from Chinatown metro station, this contemporary high-rise hotel is 3 km from Marina Bay Sands and 5 km from Singapore Botanic Gardens. Streamlined rooms feature sleeping lofts, Wi-Fi, flat-screens, and tea/coffee facilities. Amenities include a lap pool, cafe, gym, and free parking (subject to availability.<br><br>Check-in time: 15:00 <br>Check-out time: 11:00.",
+        "description":"14-min walk from Chinatown metro, contemporary high-rise hotel, 3 km from Marina Bay Sands. Streamlined rooms, sleeping lofts, lap pool, cafe, gym, free parking (subject to availability).<br><br>Check-in time: 15:00 <br>Check-out time: 11:00.",
         "latitude": "1.2908",
         "longitude": "103.8392"
       },
