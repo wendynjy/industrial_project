@@ -143,10 +143,8 @@ document.addEventListener("DOMContentLoaded", async function(){
         document.getElementById("searchInput").value = suggestion.name;
         map.flyTo([suggestion.latitude, suggestion.longitude], 15);
        
-        // Update side panel content
         updateSidePanel(suggestion);
        
-        // Clear suggestions
         suggestedLocationsList.innerHTML = '';
     }
 
@@ -172,8 +170,6 @@ document.addEventListener("DOMContentLoaded", async function(){
     function saveLocation() {
         const location = saveButton.location;
         const savedLocations = JSON.parse(localStorage.getItem("savedLocations")) || [];
-    
-        // Check if the location is already saved
         const isAlreadySaved = savedLocations.some(savedLocation => savedLocation.name === location.name);
     
         if (!isAlreadySaved) {
@@ -370,11 +366,8 @@ async function loadData(filePath) {
 function createMap() {
     const map = L.map('map');
 
-    // Set the center point at Zoo
-    // 1.4047, 103.7949
     map.setView([1.4047, 103.7949], 15);
-    
-    // Need a tile layer
+
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
     return map;
 }
