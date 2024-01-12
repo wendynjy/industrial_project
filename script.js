@@ -95,6 +95,10 @@ document.addEventListener("DOMContentLoaded", async function(){
 
     const suggestedLocationsList = document.getElementById("suggestedLocationsList");
 
+    document.getElementById("searchInput").addEventListener("touchstart", function (event) {
+        document.querySelector("meta[name=viewport]").setAttribute("content", "width=device-width, initial-scale=1.0, user-scalable=no");
+    });
+
     document.getElementById("searchInput").addEventListener("input", function () {
         initiateSearch();
     });
