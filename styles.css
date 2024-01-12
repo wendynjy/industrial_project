@@ -4,7 +4,7 @@ body {
 }
 
 #map {
-    height: 100vh;
+    height: 100dvh;
 }
 
 #categoryDropdown {
@@ -207,7 +207,6 @@ body {
     color: #888;
 }
 
-/* Style for positioning the modal */
 .leaflet-map-popup.custom-popup {
     z-index: 1200;
 }
