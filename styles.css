@@ -196,6 +196,7 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    z-index: 1500;
 }
 
 .custom-popup-close {

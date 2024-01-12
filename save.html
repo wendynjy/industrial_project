@@ -53,10 +53,8 @@
     <table>
         <thead>
             <tr>
-                <th>Location Name</th>
-                <th>Image</th>
+                <th>Location</th>
                 <th>Address</th>
-                <th>Description</th>
                 <th>Direction</th>
                 <th>Action</th>
                 <!-- Add more table headers for additional details if needed -->
@@ -82,10 +80,8 @@
             savedLocations.forEach((location, index) => {
                 const row = document.createElement("tr");
                 row.innerHTML = `
-                    <td>${location.name}</td>
-                    <td><img src="${location.image}" alt="Location Image" style="max-width: 100px; max-height: 100px;"></td>
+                    <td>${location.name}<br><img src="${location.image}" alt="Location Image" style="max-width: 100px; max-height: 100px;"></td>
                     <td>${location.address}</td>
-                    <td>${location.description}</td>
                     <td><button class="button" onclick="getDirections(${location.latitude}, ${location.longitude})">Get Directions</button></td>
                     <td><button class="remove" onclick="removeLocation(${index})">Remove</button></td>
                     <!-- Add more cells for additional details if needed -->
