@@ -351,6 +351,12 @@ document.addEventListener("DOMContentLoaded", async function(){
             const nameElement = document.createElement('h3');
             nameElement.textContent = attraction.name;
 
+            const imageElement = document.createElement('img');
+            imageElement.src = attraction.image;
+            imageElement.alt = `${attraction.name} Image`;
+            imageElement.style.maxWidth = '150px';
+            imageElement.style.maxHeight = '150px';
+
             const tempElement = document.createElement('div');
             tempElement.innerHTML = attraction.address;
 
@@ -360,6 +366,7 @@ document.addEventListener("DOMContentLoaded", async function(){
             addressElement.textContent = cleanAddress;
     
             attractionBox.appendChild(nameElement);
+            attractionBox.appendChild(imageElement);
             attractionBox.appendChild(addressElement);
 
             attractionBox.style.cursor = 'pointer';
@@ -439,6 +446,12 @@ document.addEventListener("DOMContentLoaded", async function(){
             const nameElement = document.createElement('h3');
             nameElement.textContent = hawker.name;
 
+            const imageElement = document.createElement('img');
+            imageElement.src = hawker.image;
+            imageElement.alt = `${hawker.name} Image`;
+            imageElement.style.maxWidth = '150px';
+            imageElement.style.maxHeight = '150px';
+
             const tempElement = document.createElement('div');
             tempElement.innerHTML = hawker.address;
 
@@ -448,6 +461,7 @@ document.addEventListener("DOMContentLoaded", async function(){
             addressElement.textContent = cleanAddress;
     
             attractionBox.appendChild(nameElement);
+            attractionBox.appendChild(imageElement);
             attractionBox.appendChild(addressElement);
 
             attractionBox.style.cursor = 'pointer';
@@ -526,6 +540,12 @@ document.addEventListener("DOMContentLoaded", async function(){
             const nameElement = document.createElement('h3');
             nameElement.textContent = hotel.name;
 
+            const imageElement = document.createElement('img');
+            imageElement.src = hotel.image;
+            imageElement.alt = `${hotel.name} Image`;
+            imageElement.style.maxWidth = '150px';
+            imageElement.style.maxHeight = '150px';
+
             const tempElement = document.createElement('div');
             tempElement.innerHTML = hotel.address;
 
@@ -535,6 +555,7 @@ document.addEventListener("DOMContentLoaded", async function(){
             addressElement.textContent = cleanAddress;
     
             attractionBox.appendChild(nameElement);
+            attractionBox.appendChild(imageElement);
             attractionBox.appendChild(addressElement);
 
             attractionBox.style.cursor = 'pointer';
@@ -613,6 +634,12 @@ document.addEventListener("DOMContentLoaded", async function(){
             const nameElement = document.createElement('h3');
             nameElement.textContent = shopping.name;
 
+            const imageElement = document.createElement('img');
+            imageElement.src = shopping.image;
+            imageElement.alt = `${shopping.name} Image`;
+            imageElement.style.maxWidth = '150px';
+            imageElement.style.maxHeight = '150px';
+
             const tempElement = document.createElement('div');
             tempElement.innerHTML = shopping.address;
 
@@ -622,6 +649,7 @@ document.addEventListener("DOMContentLoaded", async function(){
             addressElement.textContent = cleanAddress;
     
             attractionBox.appendChild(nameElement);
+            attractionBox.appendChild(imageElement);
             attractionBox.appendChild(addressElement);
 
             attractionBox.style.cursor = 'pointer';
@@ -701,6 +729,12 @@ document.addEventListener("DOMContentLoaded", async function(){
             const nameElement = document.createElement('h3');
             nameElement.textContent = restaurant.name;
 
+            const imageElement = document.createElement('img');
+            imageElement.src = restaurant.image;
+            imageElement.alt = `${restaurant.name} Image`;
+            imageElement.style.maxWidth = '150px';
+            imageElement.style.maxHeight = '150px';
+
             const tempElement = document.createElement('div');
             tempElement.innerHTML = restaurant.address;
 
@@ -710,6 +744,7 @@ document.addEventListener("DOMContentLoaded", async function(){
             addressElement.textContent = cleanAddress;
     
             attractionBox.appendChild(nameElement);
+            attractionBox.appendChild(imageElement);
             attractionBox.appendChild(addressElement);
 
             attractionBox.style.cursor = 'pointer';
