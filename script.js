@@ -736,7 +736,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     
         const modalContent = document.createElement('div');
         modalContent.classList.add('custom-popup-content');
-        modalContent.innerHTML = '<h2>Top 10 Malls in Singapore</h2>';
+        modalContent.innerHTML = '<h2>Top 10 Fine Dining in Singapore</h2>';
     
         const container = document.createElement('div');
         container.style.maxHeight = '300px';
